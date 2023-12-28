@@ -1,0 +1,37 @@
+{
+    "circleId1": {
+        "name": "xxxx",
+        "day": 1,
+        "place": "a01ab",
+        "rank": 5,
+        "wing": "east"
+    },
+    "circleId2": {
+        "name": "yyyy",
+        "day": 2,
+        "place": "D25a",
+        "rank": 4,
+        "wing": "west"
+    },
+    "circleId3": {
+        "name": "zzzz",
+        "day": 1,
+        "place": "い14b",
+        "rank": 2,
+        "wing": "east"
+    },
+    "circleId4": {
+        "name": "aaaa",
+        "day": 2,
+        "place": "ケ14b",
+        "rank": 3,
+        "wing": "east"
+    },
+    "circleId5": {
+        "name": "bbbb",
+        "day": 1,
+        "place": "ふ34ab",
+        "rank": 1,
+        "wing": "west"
+    }
+}
