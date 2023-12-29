@@ -6,18 +6,22 @@ import json
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
 
-# ワークブックを読み込む
-workbook = openpyxl.load_workbook('c103.xlsm')
 
-# 名前'_a09a'が定義されたセルを探す
-if '_シ37b' in workbook.defined_names:
-    sheet_title, cell_coordinate = next(
-        workbook.defined_names['_シ27a'].destinations)
-    target_cell = workbook[sheet_title][cell_coordinate]
+def mapping(excelFileName, circlePlace, rank, outFileName):
+    # ワークブックを読み込む
+    workbook = openpyxl.load_workbook(excelFileName)
+    colorName = settings["rankColor"]["rank" + str(rank)]
 
-    # セルの色を赤に変更
-    target_cell.fill = openpyxl.styles.PatternFill(
-        start_color='FF0000', end_color='FF0000', fill_type='solid')
+    colorHex = webcolors.name_to_hex(colorName)
+    # 名前'_a09a'が定義されたセルを探す
+    if circlePlace in workbook.defined_names:
+        sheet_title, cell_coordinate = next(
+            workbook.defined_names[circlePlace].destinations)
+        target_cell = workbook[sheet_title][cell_coordinate]
 
-    # 保存
-    workbook.save('c103_map.xlsx')
+        # セルの色を変更
+        target_cell.fill = openpyxl.styles.PatternFill(
+            start_color=colorHex, end_color=colorHex, fill_type='solid')
+
+        # 保存
+        workbook.save(outFileName)

@@ -1,37 +1,2486 @@
 {
-    "circleId1": {
-        "name": "xxxx",
-        "day": 1,
-        "place": "a01ab",
-        "rank": 5,
+    "006ec899-9161-4817-bc3a-9cc27c393815": {
+        "deleted": false,
+        "name": "COOL&CREATE×DiGiTAL WiNG",
+        "place": "あ66ab",
+        "day": "2",
+        "wing": "west",
+        "id": "006ec899-9161-4817-bc3a-9cc27c393815"
+    },
+    "01d2d302-ae48-4fe8-ba6a-f65e1c6f4937": {
+        "menuImagePath": "01d2d302-ae48-4fe8-ba6a-f65e1c6f4937/IMG_2521.jpeg",
+        "wing": "east",
+        "name": "Mount side",
+        "day": "1",
+        "deleted": false,
+        "place": "レ34b",
+        "id": "01d2d302-ae48-4fe8-ba6a-f65e1c6f4937"
+    },
+    "02151c29-eff0-4d61-a481-e5941565941f": {
+        "name": "紺碧Studio",
+        "deleted": false,
+        "day": "2",
+        "place": "あ06a",
+        "wing": "west",
+        "id": "02151c29-eff0-4d61-a481-e5941565941f"
+    },
+    "029724d4-d6b8-41f8-a4e6-5133b6b5521c": {
+        "day": "1",
+        "menuImagePath": "029724d4-d6b8-41f8-a4e6-5133b6b5521c/IMG_2390.jpeg",
+        "deleted": false,
+        "wing": "east",
+        "name": "かるいざわ",
+        "place": "ヲ46a",
+        "id": "029724d4-d6b8-41f8-a4e6-5133b6b5521c"
+    },
+    "03509936-7704-46b8-ad74-ecce9b4afa89": {
+        "place": "あ08a",
+        "deleted": false,
+        "wing": "west",
+        "name": "ちょこふぁん",
+        "menuImagePath": "03509936-7704-46b8-ad74-ecce9b4afa89/20231228_205746~2.jpg",
+        "day": "2",
+        "id": "03509936-7704-46b8-ad74-ecce9b4afa89"
+    },
+    "03a8ce4c-401b-429b-9a01-9f0d08547538": {
+        "place": "D47ab",
+        "wing": "east",
+        "name": "Rifuroom",
+        "deleted": false,
+        "day": "2",
+        "menuImagePath": "03a8ce4c-401b-429b-9a01-9f0d08547538/Rifuroom.jpg",
+        "id": "03a8ce4c-401b-429b-9a01-9f0d08547538"
+    },
+    "05628723-3350-4617-886c-49cd333bdeec": {
+        "menuImagePath": "05628723-3350-4617-886c-49cd333bdeec/GCCgXicbEAAuyqk.jpg",
+        "place": "i20b",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "name": "かなミ",
+        "id": "05628723-3350-4617-886c-49cd333bdeec"
+    },
+    "058d0dc9-e5fd-4b05-aa3d-32741ea1cc43": {
+        "wing": "east",
+        "name": "Rip@Lip",
+        "place": "M27ab",
+        "deleted": false,
+        "day": "2",
+        "id": "058d0dc9-e5fd-4b05-aa3d-32741ea1cc43"
+    },
+    "08475697-58da-4830-ae94-29fa42786732": {
+        "menuImagePath": "08475697-58da-4830-ae94-29fa42786732/ぴよこれいと.jpg",
+        "place": "ヲ31a",
+        "day": "1",
+        "wing": "east",
+        "deleted": false,
+        "name": "ぴよこれいと",
+        "id": "08475697-58da-4830-ae94-29fa42786732"
+    },
+    "095a2dc0-047a-4b9f-b31f-8f021d512eb8": {
+        "place": "C16b",
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "menuImagePath": "095a2dc0-047a-4b9f-b31f-8f021d512eb8/image.png",
+        "name": "ねこねこっとん",
+        "id": "095a2dc0-047a-4b9f-b31f-8f021d512eb8"
+    },
+    "0a23d8c6-2b8e-4bbe-af62-616d10e605f3": {
+        "day": "1",
+        "name": "Ham☆Star",
+        "menuImagePath": "0a23d8c6-2b8e-4bbe-af62-616d10e605f3/Ham☆Star.jpg",
+        "place": "め32ab",
+        "wing": "west",
+        "deleted": false,
+        "id": "0a23d8c6-2b8e-4bbe-af62-616d10e605f3"
+    },
+    "0c12f19d-e52e-4fb1-89fd-3a9db651a8e7": {
+        "deleted": false,
+        "place": "o10b",
+        "name": "藤之茶",
+        "day": "1",
+        "wing": "east",
+        "id": "0c12f19d-e52e-4fb1-89fd-3a9db651a8e7"
+    },
+    "0cd89207-d2e1-4569-9321-63c5b34b482e": {
+        "place": "ス61a",
+        "name": "Primal Gym",
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "id": "0cd89207-d2e1-4569-9321-63c5b34b482e"
+    },
+    "0d7787fb-b41d-4f1d-b6a6-57d2c09d50bb": {
+        "day": "2",
+        "place": "め26ab",
+        "menuImagePath": "0d7787fb-b41d-4f1d-b6a6-57d2c09d50bb/おしお.jpg",
+        "name": "OSHIOSHIO",
+        "wing": "west",
+        "deleted": false,
+        "id": "0d7787fb-b41d-4f1d-b6a6-57d2c09d50bb"
+    },
+    "0df44c96-e188-40cb-ab1a-665f895bf67a": {
+        "menuImagePath": "0df44c96-e188-40cb-ab1a-665f895bf67a/朝花社同人.jpg",
+        "deleted": false,
+        "day": "1",
+        "name": "朝花社同人",
+        "place": "そ16b",
+        "wing": "west",
+        "id": "0df44c96-e188-40cb-ab1a-665f895bf67a"
+    },
+    "0e575520-eab5-467f-910c-6ef38b8ab379": {
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "name": "TIES",
+        "place": "A37a",
+        "id": "0e575520-eab5-467f-910c-6ef38b8ab379"
+    },
+    "0fbf5b8e-f680-4c36-aa3a-af764392409e": {
+        "day": "1",
+        "wing": "east",
+        "place": "ス30ab",
+        "name": "ワダメモ",
+        "menuImagePath": "0fbf5b8e-f680-4c36-aa3a-af764392409e/GCBQW8XakAAcV-o.jpg",
+        "deleted": false,
+        "id": "0fbf5b8e-f680-4c36-aa3a-af764392409e"
+    },
+    "11ba6a2f-2e1e-43ac-90d6-3d2ef6a12e54": {
+        "name": "KUROqueen",
+        "wing": "east",
+        "day": "2",
+        "menuImagePath": "11ba6a2f-2e1e-43ac-90d6-3d2ef6a12e54/IMG_2402.jpeg",
+        "place": "ワ45ab",
+        "deleted": false,
+        "id": "11ba6a2f-2e1e-43ac-90d6-3d2ef6a12e54"
+    },
+    "12421567-bc74-4ddd-9f2c-9fe8f6a1d9bd": {
+        "name": "Unkind Stadt",
+        "wing": "east",
+        "menuImagePath": "12421567-bc74-4ddd-9f2c-9fe8f6a1d9bd/GCWttT5aIAAXnQA.jpg",
+        "place": "l42b",
+        "day": "1",
+        "deleted": false,
+        "id": "12421567-bc74-4ddd-9f2c-9fe8f6a1d9bd"
+    },
+    "1293f54d-acf2-43bc-ab1d-2a78b2ed82dc": {
+        "day": "2",
+        "wing": "east",
+        "deleted": false,
+        "place": "ス86ab",
+        "name": "ESSENTIA",
+        "id": "1293f54d-acf2-43bc-ab1d-2a78b2ed82dc"
+    },
+    "13c06fe5-5d56-448d-80c7-8169bf033dfe": {
+        "place": "a03a",
+        "wing": "east",
+        "day": "1",
+        "deleted": false,
+        "name": "white  parabellum",
+        "menuImagePath": "13c06fe5-5d56-448d-80c7-8169bf033dfe/みと_1.jpg",
+        "id": "13c06fe5-5d56-448d-80c7-8169bf033dfe"
+    },
+    "152e0a48-6c40-4ee4-8498-0c89ae4ccf23": {
+        "place": "ス89ab",
+        "day": "2",
+        "wing": "east",
+        "deleted": false,
+        "name": "ろうか",
+        "menuImagePath": "152e0a48-6c40-4ee4-8498-0c89ae4ccf23/roukaC103.jpg",
+        "id": "152e0a48-6c40-4ee4-8498-0c89ae4ccf23"
+    },
+    "1624de9e-df5b-4258-abf9-99d620214f51": {
+        "menuImagePath": "1624de9e-df5b-4258-abf9-99d620214f51/2_ロ62ab.png",
+        "wing": "east",
+        "day": "2",
+        "place": "ロ62ab",
+        "deleted": false,
+        "name": "紅音色",
+        "id": "1624de9e-df5b-4258-abf9-99d620214f51"
+    },
+    "180a40ff-bf80-46d4-9148-ed31e2fb4c96": {
+        "wing": "east",
+        "menuImagePath": "180a40ff-bf80-46d4-9148-ed31e2fb4c96/GCBKdbaakAAiMuR.jpg",
+        "day": "1",
+        "deleted": false,
+        "name": "SoaR",
+        "place": "ス34b",
+        "id": "180a40ff-bf80-46d4-9148-ed31e2fb4c96"
+    },
+    "184ab10a-0fad-4bc3-a64e-f6b1e2c1b6ea": {
+        "deleted": true,
+        "name": "CARAMEL CRUNCH!",
+        "id": "184ab10a-0fad-4bc3-a64e-f6b1e2c1b6ea",
+        "place": "A65ab",
+        "day": "1",
+        "menuImagePath": "184ab10a-0fad-4bc3-a64e-f6b1e2c1b6ea/CARAMEL CRUNCH!.jpg",
         "wing": "east"
     },
-    "circleId2": {
-        "name": "yyyy",
-        "day": 2,
-        "place": "D25a",
-        "rank": 4,
-        "wing": "west"
+    "190a3416-00c6-415c-83de-78f6cc93f722": {
+        "place": "ス78a",
+        "wing": "east",
+        "menuImagePath": "190a3416-00c6-415c-83de-78f6cc93f722/IMG_2501.jpeg",
+        "day": "1",
+        "name": "BETEMIUS",
+        "deleted": false,
+        "id": "190a3416-00c6-415c-83de-78f6cc93f722"
     },
-    "circleId3": {
-        "name": "zzzz",
-        "day": 1,
-        "place": "い14b",
-        "rank": 2,
+    "1b0db1ad-8348-438a-9bc8-7ff1355d10c0": {
+        "menuImagePath": "1b0db1ad-8348-438a-9bc8-7ff1355d10c0/IMG_7441.jpeg",
+        "wing": "east",
+        "name": "すたーだすとくれいどる",
+        "deleted": true,
+        "day": "2",
+        "id": "1b0db1ad-8348-438a-9bc8-7ff1355d10c0",
+        "place": "A37a"
+    },
+    "1b68134e-ce17-48d2-8f0c-6b3ac72ceaad": {
+        "menuImagePath": "1b68134e-ce17-48d2-8f0c-6b3ac72ceaad/IMG_2440.jpeg",
+        "name": "加糖練乳",
+        "day": "1",
+        "wing": "east",
+        "place": "ル55a",
+        "deleted": false,
+        "id": "1b68134e-ce17-48d2-8f0c-6b3ac72ceaad"
+    },
+    "1c7f51ea-8ac3-468b-84a3-246523d16f1a": {
+        "place": "タ62a",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "name": "RooMSIIS",
+        "id": "1c7f51ea-8ac3-468b-84a3-246523d16f1a"
+    },
+    "1cda6026-aa29-4b07-a0a5-d6980cf497ca": {
+        "menuImagePath": "1cda6026-aa29-4b07-a0a5-d6980cf497ca/IMG_7439.jpeg",
+        "place": "A68b",
+        "day": "1",
+        "deleted": false,
+        "name": "なむあーる",
+        "wing": "east",
+        "id": "1cda6026-aa29-4b07-a0a5-d6980cf497ca"
+    },
+    "1ceb9f3b-1ca2-4890-b54e-ceeda452f420": {
+        "wing": "east",
+        "day": "1",
+        "name": "だんで畑",
+        "deleted": false,
+        "place": "A33a",
+        "id": "1ceb9f3b-1ca2-4890-b54e-ceeda452f420"
+    },
+    "1dc0ad0b-2fc8-49ef-94a5-c2681aabb2c4": {
+        "day": "1",
+        "deleted": false,
+        "place": "b11a",
+        "menuImagePath": "1dc0ad0b-2fc8-49ef-94a5-c2681aabb2c4/水無レイ.jpg",
+        "name": "午前０時",
+        "wing": "east",
+        "id": "1dc0ad0b-2fc8-49ef-94a5-c2681aabb2c4"
+    },
+    "2153b132-ae77-456b-9866-bdfdcbec9f36": {
+        "deleted": false,
+        "place": "め40ab",
+        "day": "2",
+        "name": "はむねずこ",
+        "wing": "west",
+        "id": "2153b132-ae77-456b-9866-bdfdcbec9f36"
+    },
+    "21fbba81-a93c-4b14-b7dc-0e8a8bd5cd08": {
+        "menuImagePath": "21fbba81-a93c-4b14-b7dc-0e8a8bd5cd08/よっこらペンシル.jpg",
+        "wing": "west",
+        "deleted": false,
+        "name": "よっこらペンシル",
+        "place": "め35ab",
+        "day": "1",
+        "id": "21fbba81-a93c-4b14-b7dc-0e8a8bd5cd08"
+    },
+    "226ac3e1-dd86-46e8-a0e8-b3bfeafd1b03": {
+        "deleted": false,
+        "wing": "east",
+        "day": "1",
+        "name": "AciD",
+        "place": "ス31a",
+        "id": "226ac3e1-dd86-46e8-a0e8-b3bfeafd1b03"
+    },
+    "237a74f5-2cd1-4af7-9540-78dc8ebaadd2": {
+        "place": "ホ51ab",
+        "wing": "east",
+        "menuImagePath": "237a74f5-2cd1-4af7-9540-78dc8ebaadd2/IMG_2503.jpeg",
+        "deleted": false,
+        "day": "2",
+        "name": "サイバー掛け布団",
+        "id": "237a74f5-2cd1-4af7-9540-78dc8ebaadd2"
+    },
+    "23c3a32d-43c7-4600-8366-74287a498211": {
+        "wing": "east",
+        "name": "とげまりうむ",
+        "place": "f10b",
+        "menuImagePath": "23c3a32d-43c7-4600-8366-74287a498211/とげまりうむ.jpg",
+        "day": "1",
+        "deleted": false,
+        "id": "23c3a32d-43c7-4600-8366-74287a498211"
+    },
+    "23d19fa7-8652-41f2-99e5-673a17542991": {
+        "name": "こはるびより",
+        "menuImagePath": "23d19fa7-8652-41f2-99e5-673a17542991/こはるびより.jpg",
+        "place": "ふ28a",
+        "deleted": false,
+        "day": "2",
+        "wing": "west",
+        "id": "23d19fa7-8652-41f2-99e5-673a17542991"
+    },
+    "240ffb76-ada1-4324-884f-7d9467558cb4": {
+        "deleted": false,
+        "name": "ナナナ・アーツ",
+        "day": "1",
+        "place": "l34a",
+        "menuImagePath": "240ffb76-ada1-4324-884f-7d9467558cb4/GB__P3EaQAApSYJ.jpg",
+        "wing": "east",
+        "id": "240ffb76-ada1-4324-884f-7d9467558cb4"
+    },
+    "24ee25ca-71ca-4e85-9128-40593ffd18b8": {
+        "name": "MIX-ISM",
+        "menuImagePath": "24ee25ca-71ca-4e85-9128-40593ffd18b8/C103mixism.jpg_medium",
+        "deleted": false,
+        "place": "ス28ab",
+        "wing": "east",
+        "day": "2",
+        "id": "24ee25ca-71ca-4e85-9128-40593ffd18b8"
+    },
+    "24fd2310-72b4-421f-9e05-9b93cfc0854b": {
+        "menuImagePath": "24fd2310-72b4-421f-9e05-9b93cfc0854b/20231229_161239.jpg",
+        "place": "ス86ab",
+        "name": "たろうまるん",
+        "day": "1",
+        "wing": "east",
+        "deleted": false,
+        "id": "24fd2310-72b4-421f-9e05-9b93cfc0854b"
+    },
+    "27663979-afcb-4211-92d8-b7db351c15d9": {
+        "day": "1",
+        "place": "あ35ab",
+        "name": "MILK BAR",
+        "menuImagePath": "27663979-afcb-4211-92d8-b7db351c15d9/GCRDPniboAA038V.jpeg",
+        "deleted": false,
+        "wing": "west",
+        "id": "27663979-afcb-4211-92d8-b7db351c15d9"
+    },
+    "2837f639-dda7-4f3f-b9f9-71fdd49b0115": {
+        "day": "2",
+        "place": "ス47ab",
+        "wing": "east",
+        "menuImagePath": "2837f639-dda7-4f3f-b9f9-71fdd49b0115/画像_2023-12-28_220106966.png",
+        "deleted": false,
+        "name": "ぱん",
+        "id": "2837f639-dda7-4f3f-b9f9-71fdd49b0115"
+    },
+    "28d63779-d7dc-450a-b900-12e6d1b38c18": {
+        "name": "ぽちれもん",
+        "place": "d23a",
+        "wing": "east",
+        "menuImagePath": "28d63779-d7dc-450a-b900-12e6d1b38c18/GCBfJ16aYAAVCBP.jpeg",
+        "deleted": false,
+        "day": "1",
+        "id": "28d63779-d7dc-450a-b900-12e6d1b38c18"
+    },
+    "293c19cb-8710-4988-81fe-f20bc4c98f0f": {
+        "day": "1",
+        "deleted": false,
+        "menuImagePath": "293c19cb-8710-4988-81fe-f20bc4c98f0f/米ナス.jpg",
+        "name": "米ナス",
+        "wing": "east",
+        "place": "b10a",
+        "id": "293c19cb-8710-4988-81fe-f20bc4c98f0f"
+    },
+    "29bc75ab-03b2-4eb7-b28a-0d74c6ce659c": {
+        "menuImagePath": "29bc75ab-03b2-4eb7-b28a-0d74c6ce659c/きょくきょ局.jpg",
+        "name": "きょくちょ局",
+        "wing": "east",
+        "day": "2",
+        "deleted": false,
+        "place": "A30a",
+        "id": "29bc75ab-03b2-4eb7-b28a-0d74c6ce659c"
+    },
+    "2aba8fc2-e6ac-42e3-8b48-aec15d793e49": {
+        "place": "s05a",
+        "wing": "east",
+        "name": "メグスリノキ",
+        "day": "1",
+        "menuImagePath": "2aba8fc2-e6ac-42e3-8b48-aec15d793e49/IMG_2490.jpeg",
+        "deleted": false,
+        "id": "2aba8fc2-e6ac-42e3-8b48-aec15d793e49"
+    },
+    "2c6ea4e3-fd92-48b0-a6d3-3a186949e7ba": {
+        "menuImagePath": "2c6ea4e3-fd92-48b0-a6d3-3a186949e7ba/IMG_7450.jpeg",
+        "place": "ス76a",
+        "deleted": false,
+        "name": "温煎同好会",
+        "wing": "east",
+        "day": "1",
+        "id": "2c6ea4e3-fd92-48b0-a6d3-3a186949e7ba"
+    },
+    "2dc8d7e5-36b2-471e-be9c-2ffed2d639f6": {
+        "place": "N06a",
+        "name": "薺屋本舗",
+        "wing": "east",
+        "day": "2",
+        "menuImagePath": "2dc8d7e5-36b2-471e-be9c-2ffed2d639f6/IMG_2397.jpeg",
+        "deleted": false,
+        "id": "2dc8d7e5-36b2-471e-be9c-2ffed2d639f6"
+    },
+    "2dd97981-4bad-445a-a5a9-38243d33a0d3": {
+        "place": "リ08ab",
+        "deleted": false,
+        "name": "デジアンコ",
+        "day": "2",
+        "menuImagePath": "2dd97981-4bad-445a-a5a9-38243d33a0d3/20231228_181813.jpg",
+        "wing": "east",
+        "id": "2dd97981-4bad-445a-a5a9-38243d33a0d3"
+    },
+    "2e2677bc-b556-452c-943a-936be73b073e": {
+        "place": "E62a",
+        "name": "モルんち",
+        "day": "2",
+        "wing": "east",
+        "deleted": false,
+        "menuImagePath": "2e2677bc-b556-452c-943a-936be73b073e/IMG_2396.jpeg",
+        "id": "2e2677bc-b556-452c-943a-936be73b073e"
+    },
+    "2f73d7a7-a9e6-491f-a0b4-5a29c55a5613": {
+        "name": "かぐらなな",
+        "menuImagePath": "2f73d7a7-a9e6-491f-a0b4-5a29c55a5613/画像_2023-12-28_220518644.png",
+        "day": "1",
+        "place": "a23ab",
+        "wing": "east",
+        "deleted": false,
+        "id": "2f73d7a7-a9e6-491f-a0b4-5a29c55a5613"
+    },
+    "30bf7378-8ce5-4216-a454-0e3024e01a67": {
+        "place": "め21ab",
+        "deleted": false,
+        "menuImagePath": "30bf7378-8ce5-4216-a454-0e3024e01a67/珈琲貴族.jpg",
+        "wing": "west",
+        "name": "ロイヤルマウンテン",
+        "day": "2",
+        "id": "30bf7378-8ce5-4216-a454-0e3024e01a67"
+    },
+    "3147eb62-44f7-40e1-a1b7-69545566f2bc": {
+        "wing": "west",
+        "place": "め39b",
+        "day": "1",
+        "name": "WAKUWAKUDINING",
+        "deleted": false,
+        "menuImagePath": "3147eb62-44f7-40e1-a1b7-69545566f2bc/WAKUWAKUDINING.jpg",
+        "id": "3147eb62-44f7-40e1-a1b7-69545566f2bc"
+    },
+    "31582b5c-6d31-4c03-971f-84d89bf22738": {
+        "deleted": false,
+        "name": "月光サンクチュアリ",
+        "place": "け03a",
+        "day": "1",
+        "menuImagePath": "31582b5c-6d31-4c03-971f-84d89bf22738/画像_2023-12-28_215955330.png",
+        "wing": "west",
+        "id": "31582b5c-6d31-4c03-971f-84d89bf22738"
+    },
+    "323687fe-5f95-49fd-afd3-04b17f125988": {
+        "name": "Hitenkei",
+        "place": "め42ab",
+        "wing": "west",
+        "day": "2",
+        "menuImagePath": "323687fe-5f95-49fd-afd3-04b17f125988/20231228_005531.jpg",
+        "deleted": false,
+        "id": "323687fe-5f95-49fd-afd3-04b17f125988"
+    },
+    "34e0587f-8dba-434f-8575-1dd8c8ba7e44": {
+        "wing": "east",
+        "menuImagePath": "34e0587f-8dba-434f-8575-1dd8c8ba7e44/水無レイ.jpg",
+        "deleted": true,
+        "name": "午前０時",
+        "id": "34e0587f-8dba-434f-8575-1dd8c8ba7e44",
+        "place": "b11a",
+        "day": "1"
+    },
+    "355a5525-42b2-4b95-ba04-4059c04e80bc": {
+        "deleted": false,
+        "menuImagePath": "355a5525-42b2-4b95-ba04-4059c04e80bc/画像_2023-12-26_011439904.png",
+        "day": "1",
+        "name": "すけぽんげ",
+        "place": "ル58b",
+        "wing": "east",
+        "id": "355a5525-42b2-4b95-ba04-4059c04e80bc"
+    },
+    "3673489c-4b51-4f46-9c36-9405c0158704": {
+        "place": "M38b",
+        "name": "修正パッチ3GB",
+        "wing": "east",
+        "deleted": false,
+        "day": "2",
+        "id": "3673489c-4b51-4f46-9c36-9405c0158704"
+    },
+    "373ead52-74de-47df-a565-5f80eb0b4aa1": {
+        "deleted": false,
+        "name": "すげぇ花屋。",
+        "day": "1",
+        "place": "ロ04a",
+        "wing": "east",
+        "menuImagePath": "373ead52-74de-47df-a565-5f80eb0b4aa1/IMG_2527.jpeg",
+        "id": "373ead52-74de-47df-a565-5f80eb0b4aa1"
+    },
+    "382dd3af-b385-4562-8a4f-24740981cddc": {
+        "place": "A90a",
+        "name": "鯰の生け簀",
+        "menuImagePath": "382dd3af-b385-4562-8a4f-24740981cddc/IMG_7480.jpeg",
+        "deleted": false,
+        "wing": "east",
+        "day": "1",
+        "id": "382dd3af-b385-4562-8a4f-24740981cddc"
+    },
+    "3a2d105e-b8b3-4258-b2c8-917cad99b880": {
+        "name": "LemonMeiden",
+        "wing": "east",
+        "place": "ワ40a",
+        "deleted": false,
+        "day": "2",
+        "menuImagePath": "3a2d105e-b8b3-4258-b2c8-917cad99b880/illust_114624804_20231228_180853.jpg",
+        "id": "3a2d105e-b8b3-4258-b2c8-917cad99b880"
+    },
+    "3b464e80-2ebb-44d6-bf2c-217dbb18d58f": {
+        "name": "Pastel Craft",
+        "day": "2",
+        "menuImagePath": "3b464e80-2ebb-44d6-bf2c-217dbb18d58f/20231228_205718.jpg",
+        "wing": "west",
+        "deleted": false,
+        "place": "へ13a",
+        "id": "3b464e80-2ebb-44d6-bf2c-217dbb18d58f"
+    },
+    "3b976884-37e6-4852-8e9a-1a5558986d38": {
+        "name": "ぽち小屋．",
+        "deleted": false,
+        "menuImagePath": "3b976884-37e6-4852-8e9a-1a5558986d38/ぽち.jpg",
+        "place": "A47ab",
+        "day": "2",
+        "wing": "east",
+        "id": "3b976884-37e6-4852-8e9a-1a5558986d38"
+    },
+    "3c1c29d0-9cf7-4f19-ba27-8ba163481d76": {
+        "deleted": false,
+        "name": "cornerium",
+        "menuImagePath": "3c1c29d0-9cf7-4f19-ba27-8ba163481d76/20231228_205606.jpg",
+        "day": "2",
+        "wing": "west",
+        "place": "ひ41a",
+        "id": "3c1c29d0-9cf7-4f19-ba27-8ba163481d76"
+    },
+    "3d8e7391-c26f-4cf1-9f4d-d73b525e071e": {
+        "menuImagePath": "3d8e7391-c26f-4cf1-9f4d-d73b525e071e/GCLvF1faYAAD_AP.jpg",
+        "name": "天夢 森流彩",
+        "place": "め30ab",
+        "day": "2",
+        "wing": "west",
+        "deleted": false,
+        "id": "3d8e7391-c26f-4cf1-9f4d-d73b525e071e"
+    },
+    "3e641952-0a19-47db-a55e-44f3041158ec": {
+        "day": "2",
+        "deleted": false,
+        "name": "しろぷろ。",
+        "place": "あ50ab",
+        "wing": "west",
+        "id": "3e641952-0a19-47db-a55e-44f3041158ec"
+    },
+    "418acbfa-e581-4437-94b2-7c50c8497ee8": {
+        "place": "A40a",
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "name": "陸の孤島亭",
+        "id": "418acbfa-e581-4437-94b2-7c50c8497ee8"
+    },
+    "41b8afb2-a2b3-44ec-a4ac-c66c2cf7aad0": {
+        "deleted": false,
+        "name": "空耳アワー研究所",
+        "wing": "east",
+        "place": "ス40a",
+        "day": "2",
+        "id": "41b8afb2-a2b3-44ec-a4ac-c66c2cf7aad0"
+    },
+    "4202e19f-c46e-4043-8139-a9c93a6075de": {
+        "name": "Chocolate Sheep",
+        "day": "1",
+        "deleted": false,
+        "place": "ス25b",
+        "wing": "east",
+        "id": "4202e19f-c46e-4043-8139-a9c93a6075de"
+    },
+    "426517c8-9237-40c6-b63c-e8abb7458d8a": {
+        "place": "め27ab",
+        "wing": "west",
+        "day": "2",
+        "name": "CANVAS",
+        "menuImagePath": "426517c8-9237-40c6-b63c-e8abb7458d8a/20231229_014922.jpg",
+        "deleted": false,
+        "id": "426517c8-9237-40c6-b63c-e8abb7458d8a"
+    },
+    "42ae0dc2-22c7-48ec-a547-171593676efa": {
+        "place": "ワ58ab",
+        "day": "2",
+        "menuImagePath": "42ae0dc2-22c7-48ec-a547-171593676efa/sune.jpg",
+        "deleted": false,
+        "wing": "east",
+        "name": "無限大",
+        "id": "42ae0dc2-22c7-48ec-a547-171593676efa"
+    },
+    "43c70001-cb8e-4e8d-a4db-8c74551de5cd": {
+        "menuImagePath": "43c70001-cb8e-4e8d-a4db-8c74551de5cd/画像_2023-12-26_011559698.png",
+        "name": "コーヒー飲み過ぎ",
+        "deleted": false,
+        "place": "ス79a",
+        "wing": "east",
+        "day": "1",
+        "id": "43c70001-cb8e-4e8d-a4db-8c74551de5cd"
+    },
+    "44880948-fde3-4457-babd-115e030e487f": {
+        "day": "1",
+        "wing": "east",
+        "name": "アラハカ",
+        "deleted": false,
+        "place": "F50b",
+        "id": "44880948-fde3-4457-babd-115e030e487f"
+    },
+    "45c7c7a7-ad05-47b2-b39a-d101c1c31987": {
+        "day": "2",
+        "wing": "east",
+        "place": "I23a",
+        "deleted": false,
+        "name": "BRAVE CHICKEN",
+        "id": "45c7c7a7-ad05-47b2-b39a-d101c1c31987"
+    },
+    "472387f9-01c0-4b41-8d2d-1df8c44fd79f": {
+        "deleted": false,
+        "name": "Takiki palette",
+        "wing": "east",
+        "menuImagePath": "472387f9-01c0-4b41-8d2d-1df8c44fd79f/IMG_2492.jpeg",
+        "day": "1",
+        "place": "ス75ab",
+        "id": "472387f9-01c0-4b41-8d2d-1df8c44fd79f"
+    },
+    "487186dd-58bd-4974-ad13-b5dfe683c84b": {
+        "place": "ル02b",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "name": "TWILIGHTER",
+        "menuImagePath": "487186dd-58bd-4974-ad13-b5dfe683c84b/IMG_2447.jpeg",
+        "id": "487186dd-58bd-4974-ad13-b5dfe683c84b"
+    },
+    "48a4fcb2-51a0-43c2-96bb-18e364a92cab": {
+        "day": "2",
+        "id": "48a4fcb2-51a0-43c2-96bb-18e364a92cab",
+        "name": "テスト2",
+        "place": "い01b",
+        "wing": "east",
+        "deleted": true
+    },
+    "49d6928f-4190-411c-9ee3-315942431f69": {
+        "name": "Grand lemon",
+        "day": "2",
+        "wing": "east",
+        "place": "I28b",
+        "deleted": false,
+        "id": "49d6928f-4190-411c-9ee3-315942431f69"
+    },
+    "4af868e3-808e-4136-a495-056f5a70948a": {
+        "deleted": false,
+        "day": "1",
+        "place": "A29ab",
+        "wing": "east",
+        "name": "NtyPe",
+        "id": "4af868e3-808e-4136-a495-056f5a70948a"
+    },
+    "4c4197d1-ae94-424a-9052-a6d087a56d75": {
+        "menuImagePath": "4c4197d1-ae94-424a-9052-a6d087a56d75/GCGyaVLbAAApsVj.jpeg",
+        "day": "1",
+        "name": "たき工房",
+        "wing": "west",
+        "deleted": false,
+        "place": "き27a ",
+        "id": "4c4197d1-ae94-424a-9052-a6d087a56d75"
+    },
+    "4c8b0218-64d5-44d1-8151-a4ecdf18407d": {
+        "deleted": false,
+        "wing": "east",
+        "name": "北狩堂",
+        "menuImagePath": "4c8b0218-64d5-44d1-8151-a4ecdf18407d/画像_2023-12-28_220404363.png",
+        "day": "2",
+        "place": "t14b",
+        "id": "4c8b0218-64d5-44d1-8151-a4ecdf18407d"
+    },
+    "4d977d9d-957c-4aa7-b483-131d8156bc9c": {
+        "day": "2",
+        "name": "八卦電影城",
+        "menuImagePath": "4d977d9d-957c-4aa7-b483-131d8156bc9c/IMG_2407.jpeg",
+        "deleted": false,
+        "place": "あ51ab",
+        "wing": "west",
+        "id": "4d977d9d-957c-4aa7-b483-131d8156bc9c"
+    },
+    "4e986746-1607-4f2f-9c92-ccf94648d3ee": {
+        "place": "あ10ab",
+        "day": "2",
+        "deleted": false,
+        "wing": "west",
+        "name": "彩音",
+        "id": "4e986746-1607-4f2f-9c92-ccf94648d3ee"
+    },
+    "4f06767d-a44b-4071-be7a-c74276ff9971": {
+        "deleted": false,
+        "place": "と01a",
+        "wing": "west",
+        "name": "サクラリウム",
+        "day": "2",
+        "id": "4f06767d-a44b-4071-be7a-c74276ff9971"
+    },
+    "4f9fd3d1-ccfe-4400-bb07-b82a0be2b331": {
+        "deleted": false,
+        "menuImagePath": "4f9fd3d1-ccfe-4400-bb07-b82a0be2b331/20231229_030551.jpg",
+        "day": "2",
+        "place": "に12b",
+        "name": "クォーターエリア",
+        "wing": "west",
+        "id": "4f9fd3d1-ccfe-4400-bb07-b82a0be2b331"
+    },
+    "50239868-feb5-44e9-a840-acd5ee2ee6db": {
+        "wing": "east",
+        "deleted": false,
+        "day": "1",
+        "place": "ｍ01b",
+        "name": "巌流アイランド",
+        "menuImagePath": "50239868-feb5-44e9-a840-acd5ee2ee6db/GCLu5N8bAAA6yjz.jpg",
+        "id": "50239868-feb5-44e9-a840-acd5ee2ee6db"
+    },
+    "5074152b-194e-482d-958b-5e5752ebaa22": {
+        "day": "1",
+        "wing": "east",
+        "menuImagePath": "5074152b-194e-482d-958b-5e5752ebaa22/IMG_2426.jpeg",
+        "name": "キョダイチチモミ",
+        "deleted": false,
+        "place": "ル31a",
+        "id": "5074152b-194e-482d-958b-5e5752ebaa22"
+    },
+    "519bee30-0e16-4771-8814-be9a5a5b764a": {
+        "wing": "east",
+        "day": "1",
+        "name": "東のペンギン",
+        "deleted": false,
+        "place": "a32a",
+        "id": "519bee30-0e16-4771-8814-be9a5a5b764a"
+    },
+    "52c5a3cd-310a-42ef-9168-0a0b86aa7551": {
+        "wing": "east",
+        "deleted": false,
+        "day": "1",
+        "menuImagePath": "52c5a3cd-310a-42ef-9168-0a0b86aa7551/カントク.jpg",
+        "place": "A28ab",
+        "name": "5年目の放課後",
+        "id": "52c5a3cd-310a-42ef-9168-0a0b86aa7551"
+    },
+    "53561948-5dbc-4ccf-8f8c-e674b2b25b66": {
+        "place": "A20ab",
+        "day": "1",
+        "id": "53561948-5dbc-4ccf-8f8c-e674b2b25b66",
+        "deleted": true,
+        "menuImagePath": "53561948-5dbc-4ccf-8f8c-e674b2b25b66/イコモチ.jpg",
+        "name": "Icomochi",
         "wing": "east"
     },
-    "circleId4": {
-        "name": "aaaa",
-        "day": 2,
-        "place": "ケ14b",
-        "rank": 3,
+    "53f0f3c4-7dbb-4615-90be-2be1c3d07835": {
+        "place": "A34ab",
+        "name": "天気輪",
+        "wing": "east",
+        "menuImagePath": "53f0f3c4-7dbb-4615-90be-2be1c3d07835/20231228_183308.jpg",
+        "deleted": false,
+        "day": "2",
+        "id": "53f0f3c4-7dbb-4615-90be-2be1c3d07835"
+    },
+    "541f2354-ff43-4292-b45a-cdfcbf52ea16": {
+        "deleted": false,
+        "day": "1",
+        "place": "ヲ17b",
+        "name": "うぐら丸",
+        "menuImagePath": "541f2354-ff43-4292-b45a-cdfcbf52ea16/IMG_2516.jpeg",
+        "wing": "east",
+        "id": "541f2354-ff43-4292-b45a-cdfcbf52ea16"
+    },
+    "54e08c84-3904-4709-b2ba-d7700af62308": {
+        "name": "やんやんよ",
+        "place": "め34ab",
+        "deleted": false,
+        "menuImagePath": "54e08c84-3904-4709-b2ba-d7700af62308/IMG_2389.jpeg",
+        "wing": "west",
+        "day": "1",
+        "id": "54e08c84-3904-4709-b2ba-d7700af62308"
+    },
+    "54ffff09-dac1-4103-8411-ca8b17bee60c": {
+        "wing": "east",
+        "deleted": false,
+        "day": "2",
+        "name": "Twilight Road",
+        "place": "A77a",
+        "id": "54ffff09-dac1-4103-8411-ca8b17bee60c"
+    },
+    "55736ae6-576c-4614-a693-20fd289593ae": {
+        "deleted": true,
+        "place": "Ｅ09b",
+        "name": "みずかに",
+        "id": "55736ae6-576c-4614-a693-20fd289593ae",
+        "day": "2",
         "wing": "east"
     },
-    "circleId5": {
-        "name": "bbbb",
-        "day": 1,
+    "58069783-e52d-4170-912c-0ec587d760be": {
+        "deleted": false,
+        "place": "N22a",
+        "name": "ジャックとニコルソン",
+        "wing": "east",
+        "day": "2",
+        "id": "58069783-e52d-4170-912c-0ec587d760be"
+    },
+    "591e3715-b0a3-427e-b6e1-544adcf5ca47": {
+        "deleted": false,
+        "name": "あめじすとダークネス",
+        "wing": "east",
+        "place": "G02a",
+        "day": "2",
+        "menuImagePath": "591e3715-b0a3-427e-b6e1-544adcf5ca47/IMG_2494.jpeg",
+        "id": "591e3715-b0a3-427e-b6e1-544adcf5ca47"
+    },
+    "59b7f292-460c-4c51-abd6-b68e9ebf82ef": {
+        "day": "2",
+        "name": "翡翠の庭園",
+        "wing": "west",
+        "menuImagePath": "59b7f292-460c-4c51-abd6-b68e9ebf82ef/IMG_2903.jpg",
+        "place": "め10b",
+        "deleted": false,
+        "id": "59b7f292-460c-4c51-abd6-b68e9ebf82ef"
+    },
+    "5a724d9b-005b-4fef-8837-ac64f5f52371": {
+        "place": "G14b",
+        "deleted": false,
+        "wing": "east",
+        "name": "そふぁー教",
+        "day": "2",
+        "id": "5a724d9b-005b-4fef-8837-ac64f5f52371"
+    },
+    "5c505083-bef9-41e9-bf67-4a4a5f8f9d69": {
+        "name": "麻婆猫",
+        "deleted": false,
+        "wing": "east",
+        "place": "Ｈ37b",
+        "menuImagePath": "5c505083-bef9-41e9-bf67-4a4a5f8f9d69/麻婆猫.jpg",
+        "day": "2",
+        "id": "5c505083-bef9-41e9-bf67-4a4a5f8f9d69"
+    },
+    "5cf76232-f028-4aba-9ab0-3fc03abc4aa5": {
+        "menuImagePath": "5cf76232-f028-4aba-9ab0-3fc03abc4aa5/IMG_2523.jpeg",
+        "day": "1",
+        "wing": "east",
+        "deleted": false,
+        "place": "ロ46b",
+        "name": "もちもちの木",
+        "id": "5cf76232-f028-4aba-9ab0-3fc03abc4aa5"
+    },
+    "5d23baad-a83b-42e0-a7a4-9826712b3d69": {
+        "day": "1",
+        "wing": "west",
+        "menuImagePath": "5d23baad-a83b-42e0-a7a4-9826712b3d69/もじさん.jpg",
+        "place": "め50ab",
+        "name": "もじさん",
+        "deleted": false,
+        "id": "5d23baad-a83b-42e0-a7a4-9826712b3d69"
+    },
+    "5d3912f7-b039-49ab-b90e-fe7485067496": {
+        "wing": "east",
+        "name": "しまじや",
+        "place": "I29ab",
+        "deleted": false,
+        "day": "2",
+        "id": "5d3912f7-b039-49ab-b90e-fe7485067496"
+    },
+    "5d5840be-9111-434d-aaef-2246a39c22ed": {
+        "place": "め23ab",
+        "name": "Go!Go!King!",
+        "day": "2",
+        "wing": "west",
+        "deleted": false,
+        "id": "5d5840be-9111-434d-aaef-2246a39c22ed"
+    },
+    "5d5bdc24-9fd7-4c8b-ba43-c50fd6cf05d2": {
+        "place": "a13a",
+        "wing": "east",
+        "menuImagePath": "5d5bdc24-9fd7-4c8b-ba43-c50fd6cf05d2/GCMPANZakAAkKa8.jpeg",
+        "day": "1",
+        "deleted": false,
+        "name": "ACCEL SATO",
+        "id": "5d5bdc24-9fd7-4c8b-ba43-c50fd6cf05d2"
+    },
+    "5db42f33-579c-4275-a7ee-32dcc7877b0a": {
+        "name": "てまりきゃっと",
+        "wing": "east",
+        "day": "2",
+        "place": "H55b",
+        "deleted": false,
+        "id": "5db42f33-579c-4275-a7ee-32dcc7877b0a"
+    },
+    "5e8c0527-3279-4f66-b4a4-3496b124c14c": {
+        "place": "E05b",
+        "day": "2",
+        "deleted": false,
+        "wing": "east",
+        "name": "あんず屋",
+        "id": "5e8c0527-3279-4f66-b4a4-3496b124c14c"
+    },
+    "5f2afeb3-56c1-4df1-a476-c76b727f9a67": {
+        "wing": "east",
+        "name": "おきのしま",
+        "deleted": false,
+        "place": "ス85a",
+        "day": "1",
+        "id": "5f2afeb3-56c1-4df1-a476-c76b727f9a67"
+    },
+    "5f530da6-f78a-419f-9679-3622f1fcfd8a": {
+        "day": "2",
+        "name": "木漏れ陽ぱれっと",
+        "menuImagePath": "5f530da6-f78a-419f-9679-3622f1fcfd8a/20231228_181553.jpg",
+        "wing": "west",
+        "deleted": false,
+        "place": "め33a",
+        "id": "5f530da6-f78a-419f-9679-3622f1fcfd8a"
+    },
+    "60919845-a168-4efa-8a9b-337eaa3de56b": {
+        "wing": "east",
+        "day": "1",
+        "place": "ス29ab",
+        "name": "ReDrop",
+        "deleted": false,
+        "id": "60919845-a168-4efa-8a9b-337eaa3de56b"
+    },
+    "60d81424-b29e-4a1c-9060-612ab12fb1d6": {
+        "place": "o13a",
+        "day": "1",
+        "deleted": false,
+        "menuImagePath": "60d81424-b29e-4a1c-9060-612ab12fb1d6/GB8a15Ob0AAvTCu.jpg",
+        "name": "Zakki",
+        "wing": "east",
+        "id": "60d81424-b29e-4a1c-9060-612ab12fb1d6"
+    },
+    "614e8a68-974a-4540-be90-51690334cd71": {
+        "place": "m11a",
+        "wing": "east",
+        "day": "1",
+        "deleted": false,
+        "name": "しろめも",
+        "menuImagePath": "614e8a68-974a-4540-be90-51690334cd71/GCKuGczakAA0XR9.jpg",
+        "id": "614e8a68-974a-4540-be90-51690334cd71"
+    },
+    "61510aa6-379d-4237-95e4-56ff7d16b8bc": {
+        "day": "2",
+        "place": "E09b",
+        "wing": "east",
+        "deleted": false,
+        "name": "みずかに",
+        "id": "61510aa6-379d-4237-95e4-56ff7d16b8bc"
+    },
+    "61a284f6-a4d1-466d-aa4e-4df443236d17": {
+        "menuImagePath": "61a284f6-a4d1-466d-aa4e-4df443236d17/GCc_RNUboAA8YPN.jpg",
+        "deleted": false,
+        "wing": "east",
+        "place": "k35a",
+        "day": "1",
+        "name": "Nenuphar",
+        "id": "61a284f6-a4d1-466d-aa4e-4df443236d17"
+    },
+    "61f1dd22-6739-4c87-bb47-34691732e46c": {
+        "menuImagePath": "61f1dd22-6739-4c87-bb47-34691732e46c/2_C-14b.png",
+        "name": "べりーすいーとぱれっと",
+        "id": "61f1dd22-6739-4c87-bb47-34691732e46c",
+        "wing": "east",
+        "place": "C14b",
+        "deleted": true,
+        "day": "2"
+    },
+    "634c4e22-46f9-43af-a00f-9c58673811e0": {
+        "deleted": false,
+        "day": "2",
+        "wing": "east",
+        "name": "Vパン`sエクスタシー",
+        "place": "ス76ab",
+        "id": "634c4e22-46f9-43af-a00f-9c58673811e0"
+    },
+    "63816feb-3bfb-4e5b-975f-80e6f5a27185": {
+        "wing": "east",
+        "deleted": false,
+        "place": "A29ab",
+        "name": "リンゴヤ",
+        "day": "2",
+        "id": "63816feb-3bfb-4e5b-975f-80e6f5a27185"
+    },
+    "63ec75c5-a505-4d8b-b9b3-dc7f66048ce8": {
+        "wing": "east",
+        "place": "C27b",
+        "deleted": false,
+        "menuImagePath": "63ec75c5-a505-4d8b-b9b3-dc7f66048ce8/IMG_7459.jpeg",
+        "name": "TKSpower",
+        "day": "2",
+        "id": "63ec75c5-a505-4d8b-b9b3-dc7f66048ce8"
+    },
+    "67cf2eb0-f542-4a88-9bd4-db249863c5d8": {
+        "deleted": true,
+        "name": "Haる",
+        "menuImagePath": "67cf2eb0-f542-4a88-9bd4-db249863c5d8/GCBrRyyaQAA2ZuV.jpeg",
+        "id": "67cf2eb0-f542-4a88-9bd4-db249863c5d8",
+        "wing": "east",
+        "place": "a09ab",
+        "day": "1"
+    },
+    "6821bdde-be28-445e-887f-ffc4517a286c": {
+        "day": "1",
+        "name": "ぽぷり。",
+        "deleted": false,
+        "menuImagePath": "6821bdde-be28-445e-887f-ffc4517a286c/無題27_20231229001610.png",
+        "place": "レ49b",
+        "wing": "east",
+        "id": "6821bdde-be28-445e-887f-ffc4517a286c"
+    },
+    "68a0b9b1-db5e-4314-bb8c-31387289d55b": {
+        "menuImagePath": "68a0b9b1-db5e-4314-bb8c-31387289d55b/白紙の絵本.jpg",
+        "place": "ｏ12a",
+        "name": "白紙の絵本",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "id": "68a0b9b1-db5e-4314-bb8c-31387289d55b"
+    },
+    "6a044471-d7f6-4b97-8e25-f8f9e759294e": {
+        "place": "ひ01ab",
+        "wing": "west",
+        "day": "2",
+        "deleted": false,
+        "menuImagePath": "6a044471-d7f6-4b97-8e25-f8f9e759294e/20231228_230042.jpg",
+        "name": "Inadahime",
+        "id": "6a044471-d7f6-4b97-8e25-f8f9e759294e"
+    },
+    "6a3e91fd-190b-4f27-b64d-e44617724962": {
+        "deleted": false,
+        "wing": "east",
+        "place": "ロ62b",
+        "day": "1",
+        "menuImagePath": "6a3e91fd-190b-4f27-b64d-e44617724962/IMG_2449.jpeg",
+        "name": "最後まであんこたっぷり",
+        "id": "6a3e91fd-190b-4f27-b64d-e44617724962"
+    },
+    "6b0ee0bf-8ed4-4d3e-ba65-3cada952b0d1": {
+        "day": "1",
+        "place": "テ31b",
+        "name": "PONZOOM",
+        "deleted": false,
+        "menuImagePath": "6b0ee0bf-8ed4-4d3e-ba65-3cada952b0d1/IMG_2904.jpg",
+        "wing": "east",
+        "id": "6b0ee0bf-8ed4-4d3e-ba65-3cada952b0d1"
+    },
+    "6c3e5995-a2c7-4601-a4f3-0c25e6d862cc": {
+        "name": "ひとでの",
+        "wing": "east",
+        "deleted": false,
+        "day": "1",
+        "menuImagePath": "6c3e5995-a2c7-4601-a4f3-0c25e6d862cc/IMG_2473.jpeg",
+        "place": "レ58a",
+        "id": "6c3e5995-a2c7-4601-a4f3-0c25e6d862cc"
+    },
+    "7011ff12-f707-4ddb-b0fb-a870da9af340": {
+        "name": "Beeぷらねっと",
         "place": "ふ34ab",
-        "rank": 1,
-        "wing": "west"
+        "deleted": false,
+        "wing": "west",
+        "day": "2",
+        "menuImagePath": "7011ff12-f707-4ddb-b0fb-a870da9af340/20231228_232221.jpg",
+        "id": "7011ff12-f707-4ddb-b0fb-a870da9af340"
+    },
+    "7146a619-dd4b-4598-beb1-ca84a4c9b1ba": {
+        "name": "ゆきどけ抹茶",
+        "day": "1",
+        "deleted": false,
+        "wing": "east",
+        "place": "c25a",
+        "menuImagePath": "7146a619-dd4b-4598-beb1-ca84a4c9b1ba/GCcSyWrbQAA8YlV.jpg",
+        "id": "7146a619-dd4b-4598-beb1-ca84a4c9b1ba"
+    },
+    "718d39aa-dec4-431e-ab61-c844a874e199": {
+        "menuImagePath": "718d39aa-dec4-431e-ab61-c844a874e199/IMG_7441.jpeg",
+        "deleted": false,
+        "day": "2",
+        "name": "すたーだすとくれいどる",
+        "place": "A37b",
+        "wing": "east",
+        "id": "718d39aa-dec4-431e-ab61-c844a874e199"
+    },
+    "724fb585-7a15-483d-9c33-a2596fb91764": {
+        "day": "1",
+        "name": "高機動プリン体",
+        "wing": "east",
+        "deleted": false,
+        "place": "A37b",
+        "id": "724fb585-7a15-483d-9c33-a2596fb91764"
+    },
+    "7300dfef-b74a-4d96-be2d-1a40fc61649f": {
+        "day": "1",
+        "place": "o09a",
+        "wing": "east",
+        "deleted": false,
+        "menuImagePath": "7300dfef-b74a-4d96-be2d-1a40fc61649f/ふてねおき.jpg",
+        "name": "ふてねおき",
+        "id": "7300dfef-b74a-4d96-be2d-1a40fc61649f"
+    },
+    "738743fe-1980-4a4f-8556-a165d4ba173b": {
+        "deleted": false,
+        "wing": "west",
+        "name": "いもむや本舗",
+        "day": "1",
+        "place": "あ33b",
+        "id": "738743fe-1980-4a4f-8556-a165d4ba173b"
+    },
+    "755195bd-5810-4b6a-b45d-77e7f683d011": {
+        "wing": "east",
+        "place": "b04ab",
+        "name": "焼きたてジャマイカA",
+        "deleted": false,
+        "menuImagePath": "755195bd-5810-4b6a-b45d-77e7f683d011/IMG_2391.jpeg",
+        "day": "1",
+        "id": "755195bd-5810-4b6a-b45d-77e7f683d011"
+    },
+    "75ac7735-057d-4cd4-8a7d-2904e2ba93c0": {
+        "menuImagePath": "75ac7735-057d-4cd4-8a7d-2904e2ba93c0/おねぎ.jpg",
+        "day": "1",
+        "place": "b07b",
+        "deleted": false,
+        "name": "おねぎ生活",
+        "wing": "east",
+        "id": "75ac7735-057d-4cd4-8a7d-2904e2ba93c0"
+    },
+    "76324106-6743-433f-b82d-77333cfca902": {
+        "place": "あ27ab",
+        "name": "キンギョのアトリエ",
+        "menuImagePath": "76324106-6743-433f-b82d-77333cfca902/キンギョのアトリエ.jpg",
+        "day": "1",
+        "deleted": false,
+        "wing": "west",
+        "id": "76324106-6743-433f-b82d-77333cfca902"
+    },
+    "765e40bd-70d3-4e11-9e30-9e149de5d1b2": {
+        "day": "2",
+        "place": "C13b",
+        "deleted": false,
+        "wing": "east",
+        "name": "DKsha",
+        "id": "765e40bd-70d3-4e11-9e30-9e149de5d1b2"
+    },
+    "770e57db-1168-4db5-b5c8-00206362197b": {
+        "day": "1",
+        "deleted": false,
+        "name": "第二ブータン帝国",
+        "menuImagePath": "770e57db-1168-4db5-b5c8-00206362197b/IMG_2479.jpeg",
+        "wing": "east",
+        "place": "ス71b",
+        "id": "770e57db-1168-4db5-b5c8-00206362197b"
+    },
+    "7734f1aa-8955-4674-8605-2ce0a5f2e466": {
+        "day": "1",
+        "name": "西ノ田",
+        "place": "m11b",
+        "wing": "east",
+        "deleted": false,
+        "id": "7734f1aa-8955-4674-8605-2ce0a5f2e466"
+    },
+    "78410fea-a3b6-4b52-9f31-0b90dbf8892c": {
+        "deleted": false,
+        "day": "1",
+        "name": "みたらし庵",
+        "menuImagePath": "78410fea-a3b6-4b52-9f31-0b90dbf8892c/みたらし庵.jpg",
+        "wing": "east",
+        "place": "o16b",
+        "id": "78410fea-a3b6-4b52-9f31-0b90dbf8892c"
+    },
+    "78d4a3f6-a182-46c7-9531-38a10162e90b": {
+        "place": "め40a",
+        "wing": "west",
+        "day": "1",
+        "name": "DROP DEAD!!",
+        "deleted": false,
+        "menuImagePath": "78d4a3f6-a182-46c7-9531-38a10162e90b/IMG_2390.jpeg",
+        "id": "78d4a3f6-a182-46c7-9531-38a10162e90b"
+    },
+    "78f3bea9-ab49-48ce-baba-30086284990d": {
+        "wing": "east",
+        "deleted": false,
+        "day": "1",
+        "place": "a10ab",
+        "menuImagePath": "78f3bea9-ab49-48ce-baba-30086284990d/20231228_213927.jpg",
+        "name": "じゃんじゃら丼",
+        "id": "78f3bea9-ab49-48ce-baba-30086284990d"
+    },
+    "7ac75c2b-c9e3-4b63-8b4c-9f3d36e8bf97": {
+        "id": "7ac75c2b-c9e3-4b63-8b4c-9f3d36e8bf97",
+        "menuImagePath": "7ac75c2b-c9e3-4b63-8b4c-9f3d36e8bf97/みと_1.jpg",
+        "place": "A03a",
+        "wing": "east",
+        "deleted": true,
+        "name": "white parabellum",
+        "day": "1"
+    },
+    "7b1431af-f356-4351-bc30-f2b6a19b3823": {
+        "wing": "west",
+        "place": "あ26a",
+        "day": "2",
+        "deleted": false,
+        "name": "森羅万象",
+        "id": "7b1431af-f356-4351-bc30-f2b6a19b3823"
+    },
+    "7b2d1c64-7948-4675-932d-620d35cbb4d6": {
+        "day": "1",
+        "deleted": false,
+        "wing": "west",
+        "menuImagePath": "7b2d1c64-7948-4675-932d-620d35cbb4d6/らんぐ.jpg",
+        "place": "め47a",
+        "name": "らんぐストア",
+        "id": "7b2d1c64-7948-4675-932d-620d35cbb4d6"
+    },
+    "7c137da6-ebfd-48ae-aeb5-74b30e77aa4e": {
+        "deleted": false,
+        "name": "LOROOM",
+        "menuImagePath": "7c137da6-ebfd-48ae-aeb5-74b30e77aa4e/IMG_2451.jpeg",
+        "wing": "east",
+        "place": "ヲ18b",
+        "day": "1",
+        "id": "7c137da6-ebfd-48ae-aeb5-74b30e77aa4e"
+    },
+    "7e44f494-d34b-4317-918a-ac0a7e7b98f4": {
+        "day": "1",
+        "place": "あ26b",
+        "name": "白金堂",
+        "wing": "east",
+        "deleted": false,
+        "id": "7e44f494-d34b-4317-918a-ac0a7e7b98f4"
+    },
+    "7f1bfdb7-a2e4-414d-8076-9190b7231b26": {
+        "place": "ス21b",
+        "name": "Hoodier  Collection",
+        "day": "1",
+        "wing": "east",
+        "menuImagePath": "7f1bfdb7-a2e4-414d-8076-9190b7231b26/Hoodier  Collection.jpg",
+        "deleted": false,
+        "id": "7f1bfdb7-a2e4-414d-8076-9190b7231b26"
+    },
+    "7f7e4a74-f420-43de-a8b6-7815beb32e0a": {
+        "deleted": false,
+        "place": "ス88b",
+        "name": "ぷり☆Tea",
+        "menuImagePath": "7f7e4a74-f420-43de-a8b6-7815beb32e0a/ぷり☆Tea.jpg",
+        "wing": "east",
+        "day": "1",
+        "id": "7f7e4a74-f420-43de-a8b6-7815beb32e0a"
+    },
+    "7f880ba2-cff3-4cfa-9e5c-be9bb5e5e36e": {
+        "place": "H34b",
+        "name": "Anciel",
+        "day": "2",
+        "deleted": false,
+        "wing": "east",
+        "id": "7f880ba2-cff3-4cfa-9e5c-be9bb5e5e36e"
+    },
+    "80f655a9-e778-4235-970a-43a8c0475001": {
+        "day": "1",
+        "deleted": false,
+        "name": "NIGHT WEAR",
+        "wing": "west",
+        "place": "あ43b",
+        "id": "80f655a9-e778-4235-970a-43a8c0475001"
+    },
+    "816c66cf-1c02-4966-9ec0-ee4158af3694": {
+        "place": "リ02a",
+        "day": "2",
+        "wing": "east",
+        "name": "なしぱす屋",
+        "deleted": false,
+        "id": "816c66cf-1c02-4966-9ec0-ee4158af3694"
+    },
+    "826cc6e0-5007-4e91-bb9f-b516e804da85": {
+        "day": "2",
+        "name": "嘘つき屋",
+        "deleted": false,
+        "place": "Ａ57ab",
+        "wing": "east",
+        "id": "826cc6e0-5007-4e91-bb9f-b516e804da85"
+    },
+    "83edcf4a-16f7-4bc5-ad16-0ebbc48c8eab": {
+        "place": "P32b",
+        "name": "サムライ忍者GREENTEA",
+        "deleted": false,
+        "day": "2",
+        "menuImagePath": "83edcf4a-16f7-4bc5-ad16-0ebbc48c8eab/2_P32b.png",
+        "wing": "east",
+        "id": "83edcf4a-16f7-4bc5-ad16-0ebbc48c8eab"
+    },
+    "83ffd26b-4094-4ad6-878b-07c3b5371be4": {
+        "id": "83ffd26b-4094-4ad6-878b-07c3b5371be4",
+        "wing": "west",
+        "place": "あ00a",
+        "deleted": true,
+        "name": "テスト1",
+        "day": "1"
+    },
+    "845e2a80-69f7-4414-98e0-9a5a8e9df039": {
+        "deleted": false,
+        "name": "おとし処",
+        "wing": "east",
+        "place": "ワ14b",
+        "day": "2",
+        "id": "845e2a80-69f7-4414-98e0-9a5a8e9df039"
+    },
+    "84622869-43a1-4c04-aa14-d366d6a87698": {
+        "menuImagePath": "84622869-43a1-4c04-aa14-d366d6a87698/GCQYhEybgAAKOZL.jpg",
+        "place": "r14b",
+        "wing": "east",
+        "day": "1",
+        "deleted": false,
+        "name": "もいぱす",
+        "id": "84622869-43a1-4c04-aa14-d366d6a87698"
+    },
+    "85178ddb-5245-4d41-a9cc-844e1f723ca3": {
+        "wing": "west",
+        "deleted": false,
+        "place": "せ13a",
+        "name": "クソザコタマゴ",
+        "menuImagePath": "85178ddb-5245-4d41-a9cc-844e1f723ca3/IMG_2388.jpeg",
+        "day": "2",
+        "id": "85178ddb-5245-4d41-a9cc-844e1f723ca3"
+    },
+    "881a2b27-9a9c-4903-bac5-b5b8c9c11249": {
+        "wing": "west",
+        "name": "みじ屋",
+        "day": "1",
+        "place": "し20a",
+        "menuImagePath": "881a2b27-9a9c-4903-bac5-b5b8c9c11249/みじ屋.jpg",
+        "deleted": false,
+        "id": "881a2b27-9a9c-4903-bac5-b5b8c9c11249"
+    },
+    "88321406-5ff0-4842-b1e2-cdd950f38cf6": {
+        "day": "2",
+        "place": "め37ab",
+        "name": "アニマルマシーン",
+        "wing": "west",
+        "deleted": false,
+        "id": "88321406-5ff0-4842-b1e2-cdd950f38cf6"
+    },
+    "88c95d91-9f66-4e36-afdb-7e9ad7770067": {
+        "menuImagePath": "88c95d91-9f66-4e36-afdb-7e9ad7770067/Yam-Yam.jpg",
+        "wing": "west",
+        "name": "Yam-Yam",
+        "day": "1",
+        "deleted": false,
+        "place": "あ49ab",
+        "id": "88c95d91-9f66-4e36-afdb-7e9ad7770067"
+    },
+    "892c6fdb-8ee3-4d00-8d6b-0f74012f5fd0": {
+        "deleted": false,
+        "place": "ヲ26a",
+        "name": "さざなみ特急便",
+        "wing": "east",
+        "menuImagePath": "892c6fdb-8ee3-4d00-8d6b-0f74012f5fd0/IMG_2394.jpeg",
+        "day": "1",
+        "id": "892c6fdb-8ee3-4d00-8d6b-0f74012f5fd0"
+    },
+    "898ff601-6226-47ed-a1ec-17f0dc28d95d": {
+        "day": "1",
+        "place": "ル38a",
+        "deleted": false,
+        "name": "りくnull",
+        "menuImagePath": "898ff601-6226-47ed-a1ec-17f0dc28d95d/IMG_2465.jpeg",
+        "wing": "east",
+        "id": "898ff601-6226-47ed-a1ec-17f0dc28d95d"
+    },
+    "89e77a8d-e723-4a0f-9086-7512e9a93839": {
+        "deleted": false,
+        "place": "a31ab",
+        "wing": "east",
+        "name": "heartstrings",
+        "day": "1",
+        "id": "89e77a8d-e723-4a0f-9086-7512e9a93839"
+    },
+    "8a64457f-e07b-4c4c-b792-6b333bd8b8fe": {
+        "name": "猫井草３丁目",
+        "place": "ル33a",
+        "menuImagePath": "8a64457f-e07b-4c4c-b792-6b333bd8b8fe/IMG_2519.jpeg",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "id": "8a64457f-e07b-4c4c-b792-6b333bd8b8fe"
+    },
+    "8ad28515-748e-45c8-975c-b3c8412739e3": {
+        "deleted": false,
+        "place": "ラ08b",
+        "day": "1",
+        "menuImagePath": "8ad28515-748e-45c8-975c-b3c8412739e3/IMG_2410.jpeg",
+        "wing": "east",
+        "name": "ほんのりシュガー堂",
+        "id": "8ad28515-748e-45c8-975c-b3c8412739e3"
+    },
+    "8cab6937-6960-4670-9324-810407946d91": {
+        "deleted": false,
+        "name": "Haる",
+        "menuImagePath": "8cab6937-6960-4670-9324-810407946d91/GCBrRyyaQAA2ZuV.jpeg",
+        "place": "a09ab",
+        "day": "1",
+        "wing": "east",
+        "id": "8cab6937-6960-4670-9324-810407946d91"
+    },
+    "8d75908b-c164-4a01-a942-0cfac1994497": {
+        "name": "MIGNON WORKS",
+        "wing": "east",
+        "menuImagePath": "8d75908b-c164-4a01-a942-0cfac1994497/mignon.jpg",
+        "day": "2",
+        "deleted": false,
+        "place": "A64ab",
+        "id": "8d75908b-c164-4a01-a942-0cfac1994497"
+    },
+    "8dd60271-ea34-4222-9c22-7a46886b1db9": {
+        "menuImagePath": "8dd60271-ea34-4222-9c22-7a46886b1db9/ちろる.jpg",
+        "place": "a22ab",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "name": "AHO-CROSS",
+        "id": "8dd60271-ea34-4222-9c22-7a46886b1db9"
+    },
+    "8e79e658-3f96-4a53-9aa9-5f84864a3662": {
+        "day": "1",
+        "deleted": false,
+        "name": "かに専門店",
+        "wing": "east",
+        "place": "ワ08ab",
+        "id": "8e79e658-3f96-4a53-9aa9-5f84864a3662"
+    },
+    "8e7b037d-42e5-45f6-8729-b68df6b57197": {
+        "wing": "west",
+        "name": "ほしまきProject",
+        "place": "め22ab",
+        "menuImagePath": "8e7b037d-42e5-45f6-8729-b68df6b57197/IMG_7435.jpg",
+        "deleted": false,
+        "day": "2",
+        "id": "8e7b037d-42e5-45f6-8729-b68df6b57197"
+    },
+    "8edd43b4-65db-4334-8a26-1d15fe145388": {
+        "deleted": false,
+        "menuImagePath": "8edd43b4-65db-4334-8a26-1d15fe145388/IMG_7440.jpeg",
+        "name": "咲乱舞",
+        "day": "1",
+        "place": "ス89a",
+        "wing": "east",
+        "id": "8edd43b4-65db-4334-8a26-1d15fe145388"
+    },
+    "8f9612aa-f294-4961-bafc-a4b30d92e439": {
+        "deleted": false,
+        "day": "1",
+        "menuImagePath": "8f9612aa-f294-4961-bafc-a4b30d92e439/しおざわ.jpg",
+        "place": "か05a",
+        "name": "こはるびより ",
+        "wing": "west",
+        "id": "8f9612aa-f294-4961-bafc-a4b30d92e439"
+    },
+    "8f9ac500-1265-49b9-aaaa-eed351808ccc": {
+        "deleted": false,
+        "day": "2",
+        "wing": "east",
+        "place": "リ19b",
+        "name": "クサソーダ",
+        "id": "8f9ac500-1265-49b9-aaaa-eed351808ccc"
+    },
+    "8fbaa88b-2551-4c5e-bd16-fb316b6c8dbe": {
+        "day": "2",
+        "wing": "west",
+        "deleted": false,
+        "place": "め10a",
+        "name": "やぶうち本舗",
+        "id": "8fbaa88b-2551-4c5e-bd16-fb316b6c8dbe"
+    },
+    "8fde9621-04f2-4d2a-a4f2-d5cb827adaf5": {
+        "day": "2",
+        "name": "Candy Club",
+        "wing": "east",
+        "deleted": false,
+        "place": "C13a",
+        "menuImagePath": "8fde9621-04f2-4d2a-a4f2-d5cb827adaf5/CandyClub.jpg",
+        "id": "8fde9621-04f2-4d2a-a4f2-d5cb827adaf5"
+    },
+    "8ff3b162-1ee2-428f-8ccd-e6670a361663": {
+        "menuImagePath": "8ff3b162-1ee2-428f-8ccd-e6670a361663/C103.jpg",
+        "place": "ユ31a",
+        "name": "ぽぽちち",
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "id": "8ff3b162-1ee2-428f-8ccd-e6670a361663"
+    },
+    "905e84b5-7b33-449d-a6a8-ba77635d2a7d": {
+        "wing": "east",
+        "menuImagePath": "905e84b5-7b33-449d-a6a8-ba77635d2a7d/GB9H8jYaAAAvw3Q.jpg",
+        "place": "l13a",
+        "day": "1",
+        "name": "ぷにぷに本舗",
+        "deleted": false,
+        "id": "905e84b5-7b33-449d-a6a8-ba77635d2a7d"
+    },
+    "90c1943c-e4da-4220-a2d8-b627a51925cf": {
+        "wing": "east",
+        "day": "2",
+        "deleted": false,
+        "name": "なすあんちょび",
+        "place": "ス73ab",
+        "id": "90c1943c-e4da-4220-a2d8-b627a51925cf"
+    },
+    "9126fd7b-a694-4b6f-b4cb-f086fa932267": {
+        "wing": "east",
+        "place": "ス88a",
+        "menuImagePath": "9126fd7b-a694-4b6f-b4cb-f086fa932267/IMG_2471.jpeg",
+        "day": "1",
+        "name": "日々鳥々",
+        "deleted": false,
+        "id": "9126fd7b-a694-4b6f-b4cb-f086fa932267"
+    },
+    "9172d7c8-e245-4a3a-854c-b435a5192a52": {
+        "id": "9172d7c8-e245-4a3a-854c-b435a5192a52",
+        "place": "ま42b",
+        "menuImagePath": "9172d7c8-e245-4a3a-854c-b435a5192a52/VRChat_2023-12-04_01-29-45.170_1920x1080.png",
+        "deleted": true,
+        "wing": "west",
+        "name": "テスト",
+        "day": "1"
+    },
+    "91f0c52f-c76a-4493-b433-489823c0153c": {
+        "place": "め33b",
+        "name": "モノフィーユ",
+        "day": "2",
+        "wing": "west",
+        "deleted": false,
+        "id": "91f0c52f-c76a-4493-b433-489823c0153c"
+    },
+    "930abd73-7c61-4a1e-b761-4c0811eca8d9": {
+        "deleted": false,
+        "name": "RRR",
+        "day": "1",
+        "wing": "west",
+        "place": "め27ab",
+        "id": "930abd73-7c61-4a1e-b761-4c0811eca8d9"
+    },
+    "93cf4761-6da4-4c3c-a5e5-15b0b7217856": {
+        "menuImagePath": "93cf4761-6da4-4c3c-a5e5-15b0b7217856/うみぼうず.jpg",
+        "name": "きんにくぽよぽよ",
+        "wing": "east",
+        "day": "1",
+        "place": "a19ab",
+        "deleted": false,
+        "id": "93cf4761-6da4-4c3c-a5e5-15b0b7217856"
+    },
+    "94c5d06a-9d08-4024-b414-37f80fc033a6": {
+        "name": "あるいてかえろう、",
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "menuImagePath": "94c5d06a-9d08-4024-b414-37f80fc033a6/IMG_2475.jpeg",
+        "place": "ロ16b",
+        "id": "94c5d06a-9d08-4024-b414-37f80fc033a6"
+    },
+    "95711833-e8e7-43a1-9a46-0ef565ee15aa": {
+        "name": "みらくるバーン",
+        "day": "1",
+        "place": "め41b",
+        "menuImagePath": "95711833-e8e7-43a1-9a46-0ef565ee15aa/みらくるバーン1.jpg",
+        "wing": "west",
+        "deleted": false,
+        "id": "95711833-e8e7-43a1-9a46-0ef565ee15aa"
+    },
+    "99773e5e-91ed-4aa2-a0bd-9b3571a1b032": {
+        "day": "2",
+        "menuImagePath": "99773e5e-91ed-4aa2-a0bd-9b3571a1b032/米ナス.jpg",
+        "wing": "west",
+        "name": "米ナス(二日目)",
+        "place": "ふ11a",
+        "deleted": false,
+        "id": "99773e5e-91ed-4aa2-a0bd-9b3571a1b032"
+    },
+    "99d0f4ea-474c-4a0d-8ead-6ab52927ff74": {
+        "day": "1",
+        "place": "め17a",
+        "menuImagePath": "99d0f4ea-474c-4a0d-8ead-6ab52927ff74/おじたん屋さん.jpg",
+        "name": "おじたん屋さん",
+        "deleted": false,
+        "wing": "west",
+        "id": "99d0f4ea-474c-4a0d-8ead-6ab52927ff74"
+    },
+    "9a3ad89e-e394-4853-ad7d-c5a2370837a1": {
+        "deleted": false,
+        "place": "ロ58b",
+        "menuImagePath": "9a3ad89e-e394-4853-ad7d-c5a2370837a1/IMG_2530.jpeg",
+        "day": "1",
+        "wing": "east",
+        "name": "らっぱ屋",
+        "id": "9a3ad89e-e394-4853-ad7d-c5a2370837a1"
+    },
+    "9af02eec-9eef-4f3d-850a-9366f32a20c5": {
+        "deleted": false,
+        "menuImagePath": "9af02eec-9eef-4f3d-850a-9366f32a20c5/GCLIH1HbEAAXfux.jpg",
+        "day": "1",
+        "wing": "east",
+        "name": "こんぶtea",
+        "place": "l35b",
+        "id": "9af02eec-9eef-4f3d-850a-9366f32a20c5"
+    },
+    "9b64f36f-ad2a-4029-9ef8-3e00568e3f86": {
+        "menuImagePath": "9b64f36f-ad2a-4029-9ef8-3e00568e3f86/POPLOOP.jpg",
+        "place": "せ26a",
+        "day": "2",
+        "deleted": false,
+        "wing": "west",
+        "name": "POPLOOP",
+        "id": "9b64f36f-ad2a-4029-9ef8-3e00568e3f86"
+    },
+    "9d0dac1c-8329-4923-b745-5f05d5fe5add": {
+        "wing": "east",
+        "name": "もぎた屋",
+        "deleted": false,
+        "menuImagePath": "9d0dac1c-8329-4923-b745-5f05d5fe5add/IMG_2496.jpeg",
+        "day": "2",
+        "place": "ポ08b",
+        "id": "9d0dac1c-8329-4923-b745-5f05d5fe5add"
+    },
+    "9d85cd05-f3ff-4e4f-be62-92e6a734122c": {
+        "day": "1",
+        "wing": "east",
+        "place": "チ02a",
+        "deleted": false,
+        "menuImagePath": "9d85cd05-f3ff-4e4f-be62-92e6a734122c/113292603_p0_master1200.jpg",
+        "name": "しばかめの小屋",
+        "id": "9d85cd05-f3ff-4e4f-be62-92e6a734122c"
+    },
+    "a0875423-1105-47a4-b603-d44584ad5471": {
+        "deleted": false,
+        "wing": "east",
+        "place": "ワ48a",
+        "day": "1",
+        "name": "Myosotis",
+        "id": "a0875423-1105-47a4-b603-d44584ad5471"
+    },
+    "a08db2b7-7795-44cd-be1b-b48bb3879d7d": {
+        "wing": "east",
+        "deleted": false,
+        "name": "すてーしょんきゃんぱす",
+        "menuImagePath": "a08db2b7-7795-44cd-be1b-b48bb3879d7d/IMG_2513.jpeg",
+        "place": "エ13a",
+        "day": "2",
+        "id": "a08db2b7-7795-44cd-be1b-b48bb3879d7d"
+    },
+    "a0980d1b-f031-45ec-bffe-b5f4aa162da3": {
+        "deleted": false,
+        "wing": "east",
+        "name": "VISTA",
+        "day": "1",
+        "place": "ス87b",
+        "menuImagePath": "a0980d1b-f031-45ec-bffe-b5f4aa162da3/GCajSYUa8AACsUR.jpg",
+        "id": "a0980d1b-f031-45ec-bffe-b5f4aa162da3"
+    },
+    "a0a6b5f8-0ece-4dcb-bd79-8f3bebd980a8": {
+        "day": "1",
+        "place": "ル44a",
+        "wing": "east",
+        "deleted": false,
+        "name": "珈琲豆乳",
+        "menuImagePath": "a0a6b5f8-0ece-4dcb-bd79-8f3bebd980a8/IMG_2430.jpeg",
+        "id": "a0a6b5f8-0ece-4dcb-bd79-8f3bebd980a8"
+    },
+    "a15733f5-557d-427b-af12-5ae4c5256d6b": {
+        "deleted": false,
+        "wing": "east",
+        "menuImagePath": "a15733f5-557d-427b-af12-5ae4c5256d6b/GCMOyz0aoAAPfku.jpg",
+        "place": "ス36b",
+        "name": "ANSWER",
+        "day": "1",
+        "id": "a15733f5-557d-427b-af12-5ae4c5256d6b"
+    },
+    "a18be1b0-7b53-4b25-863f-f3dc5225db9e": {
+        "deleted": false,
+        "wing": "east",
+        "day": "1",
+        "menuImagePath": "a18be1b0-7b53-4b25-863f-f3dc5225db9e/IMG_7436.jpeg",
+        "name": "怒屋",
+        "place": "ス84a",
+        "id": "a18be1b0-7b53-4b25-863f-f3dc5225db9e"
+    },
+    "a1de35f5-f3e3-4a3c-941a-4d6940d808ad": {
+        "day": "1",
+        "wing": "east",
+        "deleted": false,
+        "place": "b06a",
+        "name": "track back",
+        "id": "a1de35f5-f3e3-4a3c-941a-4d6940d808ad"
+    },
+    "a1f5e5eb-9f10-4a3e-a920-f7a19488f6af": {
+        "deleted": false,
+        "name": "クレスタ",
+        "menuImagePath": "a1f5e5eb-9f10-4a3e-a920-f7a19488f6af/クレスタ.jpg",
+        "day": "2",
+        "wing": "east",
+        "place": "Ａ01ab",
+        "id": "a1f5e5eb-9f10-4a3e-a920-f7a19488f6af"
+    },
+    "a305b6e8-541e-49a7-8749-2dd3d3a78595": {
+        "wing": "west",
+        "deleted": false,
+        "name": "瑠水みかん",
+        "place": "け04a",
+        "day": "1",
+        "id": "a305b6e8-541e-49a7-8749-2dd3d3a78595"
+    },
+    "a3a11669-9930-403d-996a-7633859bf78c": {
+        "deleted": false,
+        "menuImagePath": "a3a11669-9930-403d-996a-7633859bf78c/IMG_2506.jpeg",
+        "place": "L01a",
+        "name": "ひまわり花火",
+        "day": "2",
+        "wing": "east",
+        "id": "a3a11669-9930-403d-996a-7633859bf78c"
+    },
+    "a58466e3-0f2e-406c-99ab-d9f6e8557068": {
+        "day": "2",
+        "wing": "east",
+        "deleted": false,
+        "place": "C46a",
+        "name": "Brio",
+        "id": "a58466e3-0f2e-406c-99ab-d9f6e8557068"
+    },
+    "a756c109-65b8-42db-852b-d6107608ecd6": {
+        "place": "A19ab",
+        "deleted": true,
+        "wing": "east",
+        "id": "a756c109-65b8-42db-852b-d6107608ecd6",
+        "day": "1",
+        "menuImagePath": "a756c109-65b8-42db-852b-d6107608ecd6/うみぼうず.jpg",
+        "name": "きんにくぽよぽよ"
+    },
+    "a7dd7f63-7300-4b66-8785-d88f0cce8cc7": {
+        "wing": "east",
+        "menuImagePath": "a7dd7f63-7300-4b66-8785-d88f0cce8cc7/IMG_2438.jpeg",
+        "deleted": false,
+        "day": "1",
+        "name": "カッパの海流れ",
+        "place": "ス74a",
+        "id": "a7dd7f63-7300-4b66-8785-d88f0cce8cc7"
+    },
+    "a979d00b-bf83-4b2d-a860-ef74ec72bd7a": {
+        "place": "め48ab",
+        "wing": "west",
+        "name": "Over:Δ",
+        "deleted": false,
+        "day": "2",
+        "menuImagePath": "a979d00b-bf83-4b2d-a860-ef74ec72bd7a/20231228_220002.jpg",
+        "id": "a979d00b-bf83-4b2d-a860-ef74ec72bd7a"
+    },
+    "a9fea737-78bd-45f8-87e2-68f6b9a2c41a": {
+        "menuImagePath": "a9fea737-78bd-45f8-87e2-68f6b9a2c41a/IMG_2467.jpeg",
+        "place": "ヲ26b",
+        "deleted": false,
+        "wing": "east",
+        "name": "childhood's End",
+        "day": "1",
+        "id": "a9fea737-78bd-45f8-87e2-68f6b9a2c41a"
+    },
+    "aa68b7a2-0b12-4080-a677-cae612a47956": {
+        "name": "闇に蠢く",
+        "place": "ス65a",
+        "day": "2",
+        "wing": "east",
+        "deleted": false,
+        "id": "aa68b7a2-0b12-4080-a677-cae612a47956"
+    },
+    "abb80d14-b31b-4123-b01c-c87857dae284": {
+        "deleted": false,
+        "day": "2",
+        "menuImagePath": "abb80d14-b31b-4123-b01c-c87857dae284/2_C-14b.png",
+        "name": "べりーすいーとぱれっと",
+        "wing": "east",
+        "place": "C14b",
+        "id": "abb80d14-b31b-4123-b01c-c87857dae284"
+    },
+    "ac2b02d8-3533-4412-90f2-f72018a8ecdf": {
+        "day": "1",
+        "name": "Icomochi",
+        "deleted": false,
+        "menuImagePath": "ac2b02d8-3533-4412-90f2-f72018a8ecdf/イコモチ.jpg",
+        "place": "a20ab",
+        "wing": "east",
+        "id": "ac2b02d8-3533-4412-90f2-f72018a8ecdf"
+    },
+    "ad2857f6-be42-4428-9e27-b20b97845e05": {
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "name": "Lupine",
+        "place": "o12a",
+        "id": "ad2857f6-be42-4428-9e27-b20b97845e05"
+    },
+    "aef6f020-2f6b-4230-bc52-8877c2546bd6": {
+        "place": "C15b",
+        "menuImagePath": "aef6f020-2f6b-4230-bc52-8877c2546bd6/IMG_2483.jpeg",
+        "deleted": false,
+        "name": "ダイコテツ団",
+        "day": "2",
+        "wing": "east",
+        "id": "aef6f020-2f6b-4230-bc52-8877c2546bd6"
+    },
+    "af962f0e-cecd-46d1-867c-d0233dc25973": {
+        "deleted": false,
+        "place": "へ01b",
+        "day": "2",
+        "name": "べにまる水産",
+        "menuImagePath": "af962f0e-cecd-46d1-867c-d0233dc25973/GBmluKZbgAAOE5h.jpeg",
+        "wing": "west",
+        "id": "af962f0e-cecd-46d1-867c-d0233dc25973"
+    },
+    "b0fee78a-cfc1-46f8-82ae-d14c5caac4b8": {
+        "place": "ｏ09a",
+        "day": "1",
+        "wing": "east",
+        "deleted": false,
+        "name": "ふてねおき",
+        "menuImagePath": "b0fee78a-cfc1-46f8-82ae-d14c5caac4b8/GBsa7o-bAAAT4zG.jpg",
+        "id": "b0fee78a-cfc1-46f8-82ae-d14c5caac4b8"
+    },
+    "b494e756-42cf-4c3f-8252-d36bec7af724": {
+        "place": "め69b",
+        "name": "2D→ays",
+        "day": "2",
+        "deleted": false,
+        "wing": "west",
+        "id": "b494e756-42cf-4c3f-8252-d36bec7af724"
+    },
+    "b4b9e453-cd20-4de3-9c63-7882c7a9d1a9": {
+        "place": "あ53ab",
+        "menuImagePath": "b4b9e453-cd20-4de3-9c63-7882c7a9d1a9/画像_2023-12-28_215222420.png",
+        "day": "2",
+        "deleted": false,
+        "name": "tetto",
+        "wing": "west",
+        "id": "b4b9e453-cd20-4de3-9c63-7882c7a9d1a9"
+    },
+    "b543eccf-c3a4-446d-952c-0b4b9cf4be9a": {
+        "place": "A03ab",
+        "name": "きのこのみ",
+        "deleted": false,
+        "menuImagePath": "b543eccf-c3a4-446d-952c-0b4b9cf4be9a/きのこのみ.jpg",
+        "day": "2",
+        "wing": "east",
+        "id": "b543eccf-c3a4-446d-952c-0b4b9cf4be9a"
+    },
+    "b72233c5-022b-434e-9fd9-239da734712f": {
+        "place": "ス77a",
+        "deleted": false,
+        "wing": "east",
+        "menuImagePath": "b72233c5-022b-434e-9fd9-239da734712f/画像_2023-12-26_010626237.png",
+        "name": "雨洩り宿",
+        "day": "1",
+        "id": "b72233c5-022b-434e-9fd9-239da734712f"
+    },
+    "b855a737-7e6b-41c7-b619-53760b405f8d": {
+        "menuImagePath": "b855a737-7e6b-41c7-b619-53760b405f8d/CARAMEL CRUNCH!.jpg",
+        "wing": "east",
+        "name": "CARAMEL CRUNCH!",
+        "place": "A65ab",
+        "deleted": false,
+        "day": "1",
+        "id": "b855a737-7e6b-41c7-b619-53760b405f8d"
+    },
+    "b893401e-577c-4cb2-987e-2e83e45fb2b5": {
+        "wing": "east",
+        "place": "a30b",
+        "day": "1",
+        "deleted": false,
+        "name": "Chroma",
+        "menuImagePath": "b893401e-577c-4cb2-987e-2e83e45fb2b5/GCbbk9RbsAAzyTY.jpg",
+        "id": "b893401e-577c-4cb2-987e-2e83e45fb2b5"
+    },
+    "ba5d01c7-474e-437c-a800-adfae73443ca": {
+        "wing": "west",
+        "deleted": false,
+        "place": "め49ab",
+        "day": "2",
+        "name": "Ｍｉｋａ ＰｉｋａＺｏ",
+        "menuImagePath": "ba5d01c7-474e-437c-a800-adfae73443ca/Mika Pikazo.jpg",
+        "id": "ba5d01c7-474e-437c-a800-adfae73443ca"
+    },
+    "bb8472ba-487c-49ec-9b9c-b4a7286028b7": {
+        "name": "糖質イコライザ",
+        "day": "1",
+        "menuImagePath": "bb8472ba-487c-49ec-9b9c-b4a7286028b7/F6Dhd0Ga8AAk2cm.jpg",
+        "place": "o17a",
+        "wing": "east",
+        "deleted": false,
+        "id": "bb8472ba-487c-49ec-9b9c-b4a7286028b7"
+    },
+    "be4b9c64-447f-48ec-b655-a40e8c46c419": {
+        "day": "1",
+        "deleted": false,
+        "wing": "east",
+        "name": "ぽんじゆうす？",
+        "menuImagePath": "be4b9c64-447f-48ec-b655-a40e8c46c419/20231229_161426.jpg",
+        "place": "ス87a",
+        "id": "be4b9c64-447f-48ec-b655-a40e8c46c419"
+    },
+    "be7d4ac7-f687-4339-88e5-40d44201453d": {
+        "menuImagePath": "be7d4ac7-f687-4339-88e5-40d44201453d/画像_2023-12-28_220321704.png",
+        "place": "Ｍ36a",
+        "day": "2",
+        "deleted": false,
+        "name": "無糖紅茶",
+        "wing": "east",
+        "id": "be7d4ac7-f687-4339-88e5-40d44201453d"
+    },
+    "c1dc89e8-d51e-488b-a79c-bb33187eabbd": {
+        "day": "1",
+        "place": "ラ08a",
+        "menuImagePath": "c1dc89e8-d51e-488b-a79c-bb33187eabbd/IMG_7438.jpeg",
+        "wing": "east",
+        "name": "Flight DL2",
+        "deleted": false,
+        "id": "c1dc89e8-d51e-488b-a79c-bb33187eabbd"
+    },
+    "c24a4f39-0ae4-46e9-ae77-25e2d8b4789e": {
+        "day": "1",
+        "deleted": false,
+        "name": "干し雪茶",
+        "wing": "east",
+        "menuImagePath": "c24a4f39-0ae4-46e9-ae77-25e2d8b4789e/IMG_2457.jpeg",
+        "place": "ス83a",
+        "id": "c24a4f39-0ae4-46e9-ae77-25e2d8b4789e"
+    },
+    "c402bdec-4d45-46d7-b04f-f4245f3ed258": {
+        "day": "1",
+        "deleted": false,
+        "name": "アオノミナト",
+        "wing": "east",
+        "place": "ヲ25b",
+        "id": "c402bdec-4d45-46d7-b04f-f4245f3ed258"
+    },
+    "c6b0da85-78e1-491f-b2e5-e3ba31a43d64": {
+        "name": "APRICOT' Candy",
+        "wing": "east",
+        "deleted": false,
+        "place": "ロ39a",
+        "menuImagePath": "c6b0da85-78e1-491f-b2e5-e3ba31a43d64/IMG_2512.jpeg",
+        "day": "1",
+        "id": "c6b0da85-78e1-491f-b2e5-e3ba31a43d64"
+    },
+    "c7030712-7952-41b0-b721-656a59762d0f": {
+        "place": "ル54b",
+        "menuImagePath": "c7030712-7952-41b0-b721-656a59762d0f/IMG_2386.jpeg",
+        "wing": "east",
+        "day": "1",
+        "name": "ぷいぷい亭",
+        "deleted": false,
+        "id": "c7030712-7952-41b0-b721-656a59762d0f"
+    },
+    "c73ac8f9-c393-4824-bcb5-541bc4de5740": {
+        "day": "1",
+        "name": "25℃",
+        "wing": "east",
+        "menuImagePath": "c73ac8f9-c393-4824-bcb5-541bc4de5740/GCYJB0qawAAWKk9.jpg",
+        "deleted": false,
+        "place": "ｍ28ab",
+        "id": "c73ac8f9-c393-4824-bcb5-541bc4de5740"
+    },
+    "c82e39b0-acfd-4757-9942-ebe5da866eba": {
+        "wing": "west",
+        "deleted": true,
+        "id": "c82e39b0-acfd-4757-9942-ebe5da866eba",
+        "name": "DiGiTAL WiNG",
+        "day": "2",
+        "place": "あ66a"
+    },
+    "cb54a536-4f9c-4499-a46b-30faf1f05a0b": {
+        "wing": "west",
+        "place": "そ01b",
+        "menuImagePath": "cb54a536-4f9c-4499-a46b-30faf1f05a0b/ぶるぅぱいなぽぅ.jpg",
+        "day": "2",
+        "name": "ぶるぅぱいなぽぅ",
+        "deleted": false,
+        "id": "cb54a536-4f9c-4499-a46b-30faf1f05a0b"
+    },
+    "cbfb10d3-d02d-4e32-86f1-3a2e62a1c40b": {
+        "deleted": true,
+        "day": "2",
+        "menuImagePath": "cbfb10d3-d02d-4e32-86f1-3a2e62a1c40b/モクモクセイ.jpg",
+        "name": "モクモクセイ",
+        "wing": "west",
+        "id": "cbfb10d3-d02d-4e32-86f1-3a2e62a1c40b",
+        "place": "め45ab"
+    },
+    "cd1889f4-4b29-46ab-b75a-1e07aeb17058": {
+        "place": "ふ32b",
+        "deleted": false,
+        "wing": "west",
+        "day": "2",
+        "name": "こまき茶屋",
+        "id": "cd1889f4-4b29-46ab-b75a-1e07aeb17058"
+    },
+    "cd97f4ea-e198-4b50-8158-473bb24c803f": {
+        "day": "1",
+        "deleted": false,
+        "wing": "east",
+        "name": "IZMA GARDENING",
+        "menuImagePath": "cd97f4ea-e198-4b50-8158-473bb24c803f/GBygVdgaIAApcHV.jpg",
+        "place": "ル09b",
+        "id": "cd97f4ea-e198-4b50-8158-473bb24c803f"
+    },
+    "d3cefe4b-0584-40cb-8ab0-ba08afe3e355": {
+        "wing": "east",
+        "menuImagePath": "d3cefe4b-0584-40cb-8ab0-ba08afe3e355/IMG_2419.jpeg",
+        "day": "1",
+        "place": "ス77b",
+        "name": "さぼてん農場",
+        "deleted": false,
+        "id": "d3cefe4b-0584-40cb-8ab0-ba08afe3e355"
+    },
+    "d53aec3d-1f84-4e92-a64e-21eae67c6f00": {
+        "deleted": false,
+        "day": "1",
+        "place": "ス23b",
+        "wing": "east",
+        "menuImagePath": "d53aec3d-1f84-4e92-a64e-21eae67c6f00/7th knights.jpg",
+        "name": "7th knights",
+        "id": "d53aec3d-1f84-4e92-a64e-21eae67c6f00"
+    },
+    "d5b842c8-7419-4ec3-91ad-fb8b252f1364": {
+        "menuImagePath": "d5b842c8-7419-4ec3-91ad-fb8b252f1364/てりたまハウス.jpg",
+        "deleted": false,
+        "day": "1",
+        "name": "てりたまハウス",
+        "place": "ヲ38a",
+        "wing": "east",
+        "id": "d5b842c8-7419-4ec3-91ad-fb8b252f1364"
+    },
+    "d5cb15e9-37be-4956-b5ba-994c9d816aad": {
+        "place": "E62b",
+        "day": "2",
+        "name": "ぶんぼにあん",
+        "deleted": false,
+        "wing": "east",
+        "id": "d5cb15e9-37be-4956-b5ba-994c9d816aad"
+    },
+    "d5e575d8-ab74-4fbc-b8d1-a0547998a563": {
+        "name": "pixel phantom",
+        "wing": "east",
+        "day": "1",
+        "place": "A45ab",
+        "deleted": false,
+        "id": "d5e575d8-ab74-4fbc-b8d1-a0547998a563"
+    },
+    "d6e16ddd-cbf6-4da3-a653-8e911b9b3302": {
+        "place": "A16ab",
+        "wing": "east",
+        "day": "2",
+        "menuImagePath": "d6e16ddd-cbf6-4da3-a653-8e911b9b3302/画像_2023-12-28_215344371.png",
+        "deleted": false,
+        "name": "ほし",
+        "id": "d6e16ddd-cbf6-4da3-a653-8e911b9b3302"
+    },
+    "d7898829-0b75-4db9-ba1a-6a02c77006b4": {
+        "menuImagePath": "d7898829-0b75-4db9-ba1a-6a02c77006b4/IMG_2510.jpeg",
+        "place": "ス83ab",
+        "wing": "east",
+        "deleted": false,
+        "day": "2",
+        "name": "サークルフィオレ",
+        "id": "d7898829-0b75-4db9-ba1a-6a02c77006b4"
+    },
+    "d9768375-5d4b-4d93-92f3-b57614eaf4e5": {
+        "day": "1",
+        "menuImagePath": "d9768375-5d4b-4d93-92f3-b57614eaf4e5/GBJ6jr-bAAAba1f.jpg",
+        "name": "UMAGOYA",
+        "deleted": false,
+        "place": "s22ab",
+        "wing": "east",
+        "id": "d9768375-5d4b-4d93-92f3-b57614eaf4e5"
+    },
+    "daef3f43-6663-4229-bf37-7a5f1290f2b9": {
+        "place": "ラ26ab",
+        "name": "東ノ堂",
+        "menuImagePath": "daef3f43-6663-4229-bf37-7a5f1290f2b9/IMG_2420.jpeg",
+        "day": "1",
+        "deleted": false,
+        "wing": "east",
+        "id": "daef3f43-6663-4229-bf37-7a5f1290f2b9"
+    },
+    "dbb31847-1584-4089-b37c-980e626ad404": {
+        "wing": "east",
+        "day": "2",
+        "name": "ぐんかんまき",
+        "deleted": false,
+        "place": "H52a",
+        "menuImagePath": "dbb31847-1584-4089-b37c-980e626ad404/IMG_2453.jpeg",
+        "id": "dbb31847-1584-4089-b37c-980e626ad404"
+    },
+    "dd5e9df0-69de-456a-a840-534105071467": {
+        "place": "U30a",
+        "name": "愛の戦士騎士団",
+        "deleted": false,
+        "wing": "east",
+        "day": "1",
+        "menuImagePath": "dd5e9df0-69de-456a-a840-534105071467/Screenshot_20231229-002433.png",
+        "id": "dd5e9df0-69de-456a-a840-534105071467"
+    },
+    "ddc9ec33-0fbc-4c23-bf2b-046751522309": {
+        "name": "アクアドロップ",
+        "place": "A38ab",
+        "wing": "east",
+        "day": "2",
+        "menuImagePath": "ddc9ec33-0fbc-4c23-bf2b-046751522309/2_A-38ab.png",
+        "deleted": false,
+        "id": "ddc9ec33-0fbc-4c23-bf2b-046751522309"
+    },
+    "de13217c-446d-465b-86b0-04b6add95f22": {
+        "menuImagePath": "de13217c-446d-465b-86b0-04b6add95f22/IMG_7447.jpeg",
+        "day": "1",
+        "wing": "east",
+        "name": "ぐらんぷりえ。",
+        "place": "ス62b",
+        "deleted": false,
+        "id": "de13217c-446d-465b-86b0-04b6add95f22"
+    },
+    "dfae5b2c-379f-442f-9b9f-53199614c6cb": {
+        "wing": "east",
+        "place": "l33a",
+        "day": "1",
+        "name": "Faker's Manual",
+        "deleted": false,
+        "id": "dfae5b2c-379f-442f-9b9f-53199614c6cb"
+    },
+    "dfcbe8fd-54aa-41d1-9e51-a6630d1555d3": {
+        "place": "ス65a",
+        "name": "meisaiya",
+        "day": "1",
+        "wing": "east",
+        "menuImagePath": "dfcbe8fd-54aa-41d1-9e51-a6630d1555d3/IMG_2422.jpeg",
+        "deleted": false,
+        "id": "dfcbe8fd-54aa-41d1-9e51-a6630d1555d3"
+    },
+    "e088e6a9-e7d2-43a8-9518-d1bd7515e630": {
+        "name": "ETERNAL LAND",
+        "place": "あ33a",
+        "wing": "west",
+        "deleted": false,
+        "day": "1",
+        "id": "e088e6a9-e7d2-43a8-9518-d1bd7515e630"
+    },
+    "e11a5a0b-4a50-421f-93d3-32f30a4c4f1f": {
+        "wing": "east",
+        "id": "e11a5a0b-4a50-421f-93d3-32f30a4c4f1f",
+        "name": "かみしき",
+        "day": "2",
+        "deleted": true,
+        "place": "A02ab"
+    },
+    "e1781218-1a38-426b-a0ae-c9ab6662d8ff": {
+        "name": "みっかみさき",
+        "deleted": false,
+        "menuImagePath": "e1781218-1a38-426b-a0ae-c9ab6662d8ff/画像_2023-12-26_010947413.png",
+        "wing": "east",
+        "place": "ス84b",
+        "day": "1",
+        "id": "e1781218-1a38-426b-a0ae-c9ab6662d8ff"
+    },
+    "e48133d8-6768-4463-873f-ea4d2acf61ed": {
+        "menuImagePath": "e48133d8-6768-4463-873f-ea4d2acf61ed/だにまる.jpg",
+        "place": "A45a",
+        "deleted": false,
+        "wing": "east",
+        "day": "2",
+        "name": "だにまるStudio",
+        "id": "e48133d8-6768-4463-873f-ea4d2acf61ed"
+    },
+    "e48299d5-228f-4dfc-970a-fa4cb5d9cd85": {
+        "name": "Chocomonaka",
+        "place": "あ52ab",
+        "wing": "west",
+        "day": "2",
+        "deleted": false,
+        "id": "e48299d5-228f-4dfc-970a-fa4cb5d9cd85"
+    },
+    "e4f6bb55-b54f-4629-9d14-9b5841716e00": {
+        "deleted": false,
+        "menuImagePath": "e4f6bb55-b54f-4629-9d14-9b5841716e00/メガネコリ屋.jpg",
+        "day": "1",
+        "wing": "west",
+        "name": "メガネコリ屋",
+        "place": "し13a",
+        "id": "e4f6bb55-b54f-4629-9d14-9b5841716e00"
+    },
+    "e8a9e7cd-f6fb-40ae-8f85-c4778031a4d0": {
+        "deleted": false,
+        "place": "o12b",
+        "name": "GRAPHIC!!",
+        "wing": "east",
+        "day": "1",
+        "id": "e8a9e7cd-f6fb-40ae-8f85-c4778031a4d0"
+    },
+    "ea2fbfec-7b44-4318-8c02-9c2effec2b01": {
+        "deleted": false,
+        "place": "ふ23b",
+        "menuImagePath": "ea2fbfec-7b44-4318-8c02-9c2effec2b01/20231229_025109.jpg",
+        "day": "1",
+        "wing": "west",
+        "name": "おやつはうどん",
+        "id": "ea2fbfec-7b44-4318-8c02-9c2effec2b01"
+    },
+    "ebb2beda-471c-4aca-9d9e-537ae4d8d2e0": {
+        "wing": "east",
+        "name": "Dragon Kitchen",
+        "day": "2",
+        "deleted": false,
+        "place": "ス88ab",
+        "id": "ebb2beda-471c-4aca-9d9e-537ae4d8d2e0"
+    },
+    "ebdcef76-9925-4962-97b3-3617c0cedcc5": {
+        "name": "海之家",
+        "deleted": false,
+        "place": "l01b",
+        "day": "1",
+        "menuImagePath": "ebdcef76-9925-4962-97b3-3617c0cedcc5/GCANlC5asAAyN1I.jpg",
+        "wing": "east",
+        "id": "ebdcef76-9925-4962-97b3-3617c0cedcc5"
+    },
+    "ed5a9a49-a8d7-4246-9211-d5fc55b9c618": {
+        "menuImagePath": "ed5a9a49-a8d7-4246-9211-d5fc55b9c618/画像_2023-12-26_011222654.png",
+        "deleted": false,
+        "wing": "east",
+        "name": "角砂糖",
+        "place": "ス91b",
+        "day": "1",
+        "id": "ed5a9a49-a8d7-4246-9211-d5fc55b9c618"
+    },
+    "eeceee0e-1123-40ed-a27e-d7657d94c966": {
+        "menuImagePath": "eeceee0e-1123-40ed-a27e-d7657d94c966/IMG_2436.jpeg",
+        "deleted": false,
+        "wing": "east",
+        "place": "ヲ07b",
+        "name": "王女の印",
+        "day": "1",
+        "id": "eeceee0e-1123-40ed-a27e-d7657d94c966"
+    },
+    "efa832b4-5a41-48aa-988f-c4aac76799e2": {
+        "deleted": false,
+        "day": "1",
+        "wing": "east",
+        "menuImagePath": "efa832b4-5a41-48aa-988f-c4aac76799e2/GBhXeakboAARDm4.jpg",
+        "place": "ｍ01a",
+        "name": "挟辞苑",
+        "id": "efa832b4-5a41-48aa-988f-c4aac76799e2"
+    },
+    "efbf8191-6c66-4bc4-ad9c-b39bc9bd025e": {
+        "id": "efbf8191-6c66-4bc4-ad9c-b39bc9bd025e",
+        "wing": "east",
+        "menuImagePath": "efbf8191-6c66-4bc4-ad9c-b39bc9bd025e/IMG_2481.jpeg",
+        "deleted": true,
+        "name": "つきのゆき",
+        "place": "ワ27a",
+        "day": "1"
+    },
+    "f1380bfb-2a8f-48d1-a0d5-1de53fbc5f77": {
+        "place": "r40b",
+        "day": "1",
+        "deleted": false,
+        "wing": "east",
+        "name": "猫っぷ",
+        "id": "f1380bfb-2a8f-48d1-a0d5-1de53fbc5f77"
+    },
+    "f1762658-21e4-4713-bc45-6aad8dddcbcb": {
+        "deleted": false,
+        "name": "関サバト",
+        "place": "L30b",
+        "menuImagePath": "f1762658-21e4-4713-bc45-6aad8dddcbcb/IMG_2398.jpeg",
+        "wing": "east",
+        "day": "2",
+        "id": "f1762658-21e4-4713-bc45-6aad8dddcbcb"
+    },
+    "f26f73c5-1cdf-4160-83be-a572914066a4": {
+        "day": "2",
+        "deleted": false,
+        "menuImagePath": "f26f73c5-1cdf-4160-83be-a572914066a4/びやぐら.jpg",
+        "wing": "east",
+        "name": "びやぐら",
+        "place": "Ｃ07ab",
+        "id": "f26f73c5-1cdf-4160-83be-a572914066a4"
+    },
+    "f38b2e34-5854-4f28-ba8f-a302bff4d871": {
+        "deleted": false,
+        "place": "モ43a",
+        "menuImagePath": "f38b2e34-5854-4f28-ba8f-a302bff4d871/画像_2023-12-29_072932549.png",
+        "name": "UnderGround",
+        "day": "2",
+        "wing": "east",
+        "id": "f38b2e34-5854-4f28-ba8f-a302bff4d871"
+    },
+    "f38c21d5-0c5e-4786-a05c-e6c184ed77c4": {
+        "deleted": false,
+        "place": "め20a",
+        "name": "いもむすめ．",
+        "wing": "west",
+        "day": "1",
+        "menuImagePath": "f38c21d5-0c5e-4786-a05c-e6c184ed77c4/いもむすめ..jpg",
+        "id": "f38c21d5-0c5e-4786-a05c-e6c184ed77c4"
+    },
+    "f5d894e9-ced4-41b1-9320-a139bd462dfd": {
+        "place": "Q62b",
+        "menuImagePath": "f5d894e9-ced4-41b1-9320-a139bd462dfd/IMG_2905.jpeg",
+        "wing": "east",
+        "name": "Liss",
+        "day": "1",
+        "deleted": false,
+        "id": "f5d894e9-ced4-41b1-9320-a139bd462dfd"
+    },
+    "f61e9786-0fe9-4c62-a0db-d99dcffcf568": {
+        "wing": "west",
+        "deleted": false,
+        "menuImagePath": "f61e9786-0fe9-4c62-a0db-d99dcffcf568/vividcolor.jpg",
+        "name": "vividcolor",
+        "day": "2",
+        "place": "め19ab",
+        "id": "f61e9786-0fe9-4c62-a0db-d99dcffcf568"
+    },
+    "f72e2235-c77f-4a23-b29c-d6b73cdc53db": {
+        "menuImagePath": "f72e2235-c77f-4a23-b29c-d6b73cdc53db/とりはむほりっく.jpg",
+        "place": "せ07a",
+        "deleted": false,
+        "day": "1",
+        "name": "とりはむほりっく",
+        "wing": "west",
+        "id": "f72e2235-c77f-4a23-b29c-d6b73cdc53db"
+    },
+    "f89ad541-e0a0-4fd5-9ac2-7f15bbec4a57": {
+        "wing": "east",
+        "place": "k35b",
+        "deleted": false,
+        "name": "よしとも庵",
+        "menuImagePath": "f89ad541-e0a0-4fd5-9ac2-7f15bbec4a57/GCPkTJUbAAAWf09.jpg",
+        "day": "1",
+        "id": "f89ad541-e0a0-4fd5-9ac2-7f15bbec4a57"
+    },
+    "f918d400-d1d3-4ef1-a8d1-16b16b278dbb": {
+        "menuImagePath": "f918d400-d1d3-4ef1-a8d1-16b16b278dbb/C-55b.jpg",
+        "wing": "east",
+        "name": "ぷちめいぷる",
+        "deleted": false,
+        "place": "C55b",
+        "day": "2",
+        "id": "f918d400-d1d3-4ef1-a8d1-16b16b278dbb"
+    },
+    "f91cd5ea-022e-48e8-8459-b9c0b2cd238d": {
+        "deleted": false,
+        "wing": "east",
+        "name": "Sweet　Avenue",
+        "day": "2",
+        "place": "K55b",
+        "id": "f91cd5ea-022e-48e8-8459-b9c0b2cd238d"
+    },
+    "f9774270-4219-4b4d-9154-f1550decc4f3": {
+        "deleted": false,
+        "wing": "west",
+        "day": "1",
+        "place": "あ66ab",
+        "name": "しずみ荘",
+        "id": "f9774270-4219-4b4d-9154-f1550decc4f3"
+    },
+    "fa7bd9ed-124c-4ffa-b32d-a52ac8ab839d": {
+        "day": "2",
+        "deleted": false,
+        "name": "ぺろめっくす",
+        "place": "A33a",
+        "wing": "east",
+        "id": "fa7bd9ed-124c-4ffa-b32d-a52ac8ab839d"
+    },
+    "fab47c3f-2beb-49ff-be46-3ce612d32876": {
+        "menuImagePath": "fab47c3f-2beb-49ff-be46-3ce612d32876/みと_2.jpg",
+        "day": "2",
+        "wing": "west",
+        "deleted": false,
+        "place": "め34ab",
+        "name": "white parabellum",
+        "id": "fab47c3f-2beb-49ff-be46-3ce612d32876"
+    },
+    "fb7e2526-b6b1-42c5-b994-8d4a52532f6c": {
+        "deleted": false,
+        "place": "ス85b",
+        "menuImagePath": "fb7e2526-b6b1-42c5-b994-8d4a52532f6c/IMG_2462.jpeg",
+        "day": "1",
+        "wing": "east",
+        "name": "シフトライトアリスメティック",
+        "id": "fb7e2526-b6b1-42c5-b994-8d4a52532f6c"
+    },
+    "fb8d109b-0d61-40a9-8c20-a5410fae55ff": {
+        "day": "2",
+        "place": "ス46ab",
+        "deleted": false,
+        "menuImagePath": "fb8d109b-0d61-40a9-8c20-a5410fae55ff/2_ス46ab.jpg",
+        "name": "KAROMIX",
+        "wing": "east",
+        "id": "fb8d109b-0d61-40a9-8c20-a5410fae55ff"
+    },
+    "fc0f8fdb-4368-4f00-ac45-390187d271a6": {
+        "name": "ゆうひまり",
+        "menuImagePath": "fc0f8fdb-4368-4f00-ac45-390187d271a6/IMG_2445.jpeg",
+        "deleted": false,
+        "wing": "east",
+        "day": "1",
+        "place": "ワ38b",
+        "id": "fc0f8fdb-4368-4f00-ac45-390187d271a6"
+    },
+    "fd2aa733-bef5-4f16-8a6b-e563fe91287b": {
+        "menuImagePath": "fd2aa733-bef5-4f16-8a6b-e563fe91287b/IMG_2395.jpeg",
+        "deleted": false,
+        "name": "FRAC",
+        "day": "2",
+        "wing": "east",
+        "place": "C28a",
+        "id": "fd2aa733-bef5-4f16-8a6b-e563fe91287b"
+    },
+    "ff865fee-cea5-4e76-93b1-72fcf44358e9": {
+        "deleted": false,
+        "menuImagePath": "ff865fee-cea5-4e76-93b1-72fcf44358e9/GCLIH1HbEAAXfux.jpg",
+        "day": "1",
+        "name": "やわもち",
+        "place": "ｍ08a",
+        "wing": "east",
+        "id": "ff865fee-cea5-4e76-93b1-72fcf44358e9"
+    },
+    "ffa24b41-80e8-41f4-8c55-8d95dbbacf01": {
+        "day": "2",
+        "place": "ス53b",
+        "wing": "east",
+        "name": "Frenchletter",
+        "deleted": false,
+        "id": "ffa24b41-80e8-41f4-8c55-8d95dbbacf01"
+    },
+    "ffc476ee-57a4-4126-b18b-df35a29f8b55": {
+        "wing": "east",
+        "place": "Ｎ44b",
+        "deleted": false,
+        "day": "2",
+        "name": "回遊企画",
+        "id": "ffc476ee-57a4-4126-b18b-df35a29f8b55"
     }
 }
