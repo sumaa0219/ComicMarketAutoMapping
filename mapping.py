@@ -8,9 +8,7 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
 print("settings loaded")
 
 
-def mapping(excelFileName, circlePlace, rank, outFileName):
-    # ワークブックを読み込む
-    workbook = openpyxl.load_workbook(excelFileName)
+def mapping(workbook, circlePlace, rank, outFileName):
     colorName = settings["rankColor"]["rank" + str(rank)]
     circlePlace = circlePlace
     colorHex = webcolors.name_to_hex(colorName)
@@ -28,5 +26,5 @@ def mapping(excelFileName, circlePlace, rank, outFileName):
 
         print("mapping: " + circlePlace + " " +
               colorName, "priority: " + str(rank))
-        # 保存
-        workbook.save(outFileName)
+
+    return workbook

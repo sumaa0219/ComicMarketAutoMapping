@@ -1,6 +1,7 @@
 from mapping import mapping
 import json
 import re
+import openpyxl
 
 
 def mapGen(excelFileName, circleJson, dayOption, outFileName):
@@ -10,6 +11,9 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
     day2 = []
     day1Counter = 0
     day2Counter = 0
+
+    # ワークブックを読み込む
+    workbook = openpyxl.load_workbook(excelFileName)
 
     for circleID in circleJson:
         # サークル情報の取得
@@ -43,50 +47,44 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
             if dayOption == 1:
                 if day == "1":
                     for circlePlace in circlePlaces:
-                        if counter != 0:
-                            excelFileName = outFileName
-                        else:
-                            counter += 1
-                        mapping(excelFileName, circlePlace,
-                                priority, outFileName)
+                        workbook = mapping(workbook, circlePlace,
+                                           priority, outFileName)
                         print(len(day1)/day1Counter * 100, "%完了")
                         day1Counter += 1
             elif dayOption == 2:
                 if day == "2":
                     for circlePlace in circlePlaces:
-                        if counter != 0:
-                            excelFileName = outFileName
-                        else:
-                            counter += 1
-                        mapping(excelFileName, circlePlace,
-                                priority, outFileName)
+                        workbook = mapping(workbook, circlePlace,
+                                           priority, outFileName)
                         print(len(day2)/day2Counter * 100, "%完了")
                         day2Counter += 1
-            elif dayOption == 3:
-                outFileName = "day1_" + outFileName
-                if day == "1":
-                    for circlePlace in circlePlaces:
-                        if counter != 0:
-                            excelFileName = outFileName
-                        else:
-                            counter += 1
-                        mapping(excelFileName, circlePlace,
-                                priority, outFileName)
-                        print(len(day1)/day1Counter * 100, "%完了")
-                        day1Counter += 1
-                if day == "2":
-                    outFileName = "day1_" + outFileName
-                    for circlePlace in circlePlaces:
-                        if counter != 0:
-                            excelFileName = outFileName
-                        else:
-                            counter += 1
-                        mapping(excelFileName, circlePlace,
-                                priority, outFileName)
-                        print(len(day2)/day2Counter * 100, "%完了")
-                        day2Counter += 1
+        #     elif dayOption == 3:
+        #         if day == "1":
+        #             outFileName = "day1_" + outFileName
+        #             for circlePlace in circlePlaces:
+        #                 if counter != 0:
+        #                     excelFileName = outFileName
+        #                 else:
+        #                     counter += 1
+        #                 mapping(excelFileName, circlePlace,
+        #                         priority, outFileName)
+        #                 print(len(day1)/day1Counter * 100, "%完了")
+        #                 day1Counter += 1
+        #         if day == "2":
+        #             outFileName = "day1_" + outFileName
+        #             for circlePlace in circlePlaces:
+        #                 if counter != 0:
+        #                     excelFileName = outFileName
+        #                 else:
+        #                     counter += 1
+        #                 mapping(excelFileName, circlePlace,
+        #                         priority, outFileName)
+        #                 print(len(day2)/day2Counter * 100, "%完了")
+        #                 day2Counter += 1
         except:
             pass
+    # 保存
+    workbook.save(outFileName)
 
 
 def genCircleInfoList(circleInfos, priorityInfos):
@@ -114,7 +112,7 @@ with open("priority.json", 'r', encoding="utf-8") as json_file:
 with open("aaa.json", 'r', encoding="utf-8") as json_file:
     aaa = json.load(json_file)
 Info = genCircleInfoList(circleInfoJson, priorityInfoJson)
-mapGen("c103.xlsm", aaa, 1, "out.xlsx")
+mapGen("c103.xlsm", aaa, 2, "out2.xlsx")
 
 # サークル情報のjsonファイルの形式
 # "circleId1": {
