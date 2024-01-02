@@ -112,7 +112,7 @@ with open("priority.json", 'r', encoding="utf-8") as json_file:
 with open("aaa.json", 'r', encoding="utf-8") as json_file:
     aaa = json.load(json_file)
 Info = genCircleInfoList(circleInfoJson, priorityInfoJson)
-mapGen("c103.xlsm", aaa, 2, "out2.xlsx")
+mapGen("c103.xlsm", Info, 1, "out2.xlsx")
 
 # サークル情報のjsonファイルの形式
 # "circleId1": {
