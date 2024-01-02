@@ -38,6 +38,17 @@ class Application(tk.Frame):
         self.file2_button["command"] = self.select_file2
         self.file2_button.grid(row=2, column=1, sticky=tk.E + tk.W, padx=20)
 
+        self.file3_label = tk.Label(self, text="優先度リスト")
+        self.file3_label.grid(row=0, column=2, sticky=tk.E + tk.W)
+
+        self.file3_entry = tk.Entry(self)
+        self.file3_entry.grid(row=1, column=2, sticky=tk.E + tk.W, padx=20)
+
+        self.file3_button = tk.Button(self)
+        self.file3_button["text"] = "優先度リストを選択"
+        self.file3_button["command"] = self.select_file3
+        self.file3_button.grid(row=2, column=2, sticky=tk.E + tk.W, padx=20)
+
         self.option1 = tk.IntVar()
         self.option1_check = tk.Checkbutton(
             self, text="1日目", variable=self.option1)
@@ -65,18 +76,28 @@ class Application(tk.Frame):
     def select_file1(self):
         filename = filedialog.askopenfilename(
             filetypes=[("Excel file", "*.xlsx;*.xls;*.xlsm")])
-        self.file1_entry.delete(0, tk.END)
-        self.file1_entry.insert(0, filename)
+        if filename:
+            self.file1_entry.delete(0, tk.END)
+            self.file1_entry.insert(0, filename)
 
     def select_file2(self):
         filename = filedialog.askopenfilename(
             filetypes=[("Json file", "*.json")])
-        self.file2_entry.delete(0, tk.END)
-        self.file2_entry.insert(0, filename)
+        if filename:
+            self.file2_entry.delete(0, tk.END)
+            self.file2_entry.insert(0, filename)
+
+    def select_file3(self):
+        filename = filedialog.askopenfilename(
+            filetypes=[("Json file", "*.json")])
+        if filename:
+            self.file3_entry.delete(0, tk.END)
+            self.file3_entry.insert(0, filename)
 
     def run(self):
         file1 = self.file1_entry.get()
         file2 = self.file2_entry.get()
+        file3 = self.file3_entry.get()
         output = self.output_entry.get()
 
         if not file1 or not file2 or not output:
@@ -86,11 +107,12 @@ class Application(tk.Frame):
 
         # ここでファイルを処理します
         # ...
+        print(file1)
 
         messagebox.showinfo("Success", "Operation completed successfully.")
 
 
 root = tk.Tk()
-root.geometry("400x220")
+root.geometry("670x220")
 app = Application(master=root)
 app.mainloop()

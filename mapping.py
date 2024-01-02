@@ -5,15 +5,18 @@ import json
 # 設定ファイルの読み込み
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
+print("settings loaded")
 
 
 def mapping(excelFileName, circlePlace, rank, outFileName):
     # ワークブックを読み込む
     workbook = openpyxl.load_workbook(excelFileName)
     colorName = settings["rankColor"]["rank" + str(rank)]
-
+    circlePlace = circlePlace
     colorHex = webcolors.name_to_hex(colorName)
-    # 名前'_a09a'が定義されたセルを探す
+    colorHex = colorHex[1:]
+
+    # 名前が定義されたセルを探す
     if circlePlace in workbook.defined_names:
         sheet_title, cell_coordinate = next(
             workbook.defined_names[circlePlace].destinations)
@@ -23,5 +26,7 @@ def mapping(excelFileName, circlePlace, rank, outFileName):
         target_cell.fill = openpyxl.styles.PatternFill(
             start_color=colorHex, end_color=colorHex, fill_type='solid')
 
+        print("mapping: " + circlePlace + " " +
+              colorName, "priority: " + str(rank))
         # 保存
         workbook.save(outFileName)
