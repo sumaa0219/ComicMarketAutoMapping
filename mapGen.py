@@ -99,10 +99,11 @@ def genCircleInfoList(circleInfos, itemInfos):
                 if circleInfos[circleInfo]["id"] == itemInfoJson[item]["circleId"]:
                     itemcircleList.append(itemInfos[item]["id"])
             itemIDperCircle.append(itemcircleList)
-    # print(itemIDperCircle) #サークルごとのアイテムIDのリスト 必要なら出す
+    # print(itemIDperCircle)  # サークルごとのアイテムIDのリスト 必要なら出す
 
     for circleInfo in circleInfos:
         if circleInfos[circleInfo]["deleted"] == False:
+            info = circleInfos[circleInfo]
             for itemID in itemIDperCircle[counter]:
                 priotity = 0
                 for users in itemInfos[itemID]["users"]:
@@ -110,31 +111,24 @@ def genCircleInfoList(circleInfos, itemInfos):
                         priotity = users["priority"]
             counter += 1
             if priotity != 0:
-                circleInfos[circleInfo]["priority"] = priotity
-                infoList.update(circleInfos)
+                info["priority"] = priotity
+                infoList.update({circleInfo: info})
 
-    # try:
-    #     if circleInfos[circleInfo]["id"] == priority["circleId"]:
-    #         circleInfos[circleInfo]["priority"] = priority["priority"]
-    #         infoList.update(circleInfos)
-    # except:
-    #     pass
-
-    return infoList
+    return infoList, itemIDperCircle
 
 
 # サークル情報の読み込み
 with open("list.json", 'r', encoding="utf-8") as json_file:
     circleInfoJson = json.load(json_file)
 
+
+# 購入物情報の読み込み
 with open("item.json", 'r', encoding="utf-8") as json_file:
     itemInfoJson = json.load(json_file)
 
-with open("aaa.json", 'r', encoding="utf-8") as json_file:
-    aaa = json.load(json_file)
-Info = genCircleInfoList(circleInfoJson, itemInfoJson)
+Info, itemIDperCircle = genCircleInfoList(circleInfoJson, itemInfoJson)
 # print(Info)
-mapGen("c103.xlsm", Info, 2, "out2.xlsx")
+# mapGen("c103.xlsm", Info, 2, "out2.xlsx")
 
 # サークル情報のjsonファイルの形式
 # "circleId1": {

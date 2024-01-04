@@ -5,7 +5,7 @@ import json
 # 設定ファイルの読み込み
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
-print("settings loaded")
+print("settings for mapping is loaded")
 
 
 def mapping(workbook, circlePlace, priority, outFileName):

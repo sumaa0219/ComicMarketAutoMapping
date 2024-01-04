@@ -5,5 +5,22 @@
         "priority3": "orange",
         "priority4": "green",
         "priority5": "red"
+    },
+    "url": {
+        "webapp": {
+            "domainOrigin": "https://com-fork-c103.vercel.app/",
+            "circleList": "/api/db/item",
+            "itemList": "/api/db/circle"
+        },
+        "webMapInfo": {
+            "domainOrigin": "https://webcatalog-free.circle.ms/",
+            "mapInfo": "Map/GetMapping2"
+        }
+    },
+    "block": {
+        "1": "e123",
+        "2": "e456",
+        "3": "e7",
+        "4": "w12"
     }
 }
