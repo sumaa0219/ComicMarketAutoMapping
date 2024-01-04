@@ -3,6 +3,7 @@ import mapGen
 import listGen
 import requests
 import imgGen
+import os
 
 # 設定ファイルの読み込み
 with open('settings.json', 'r', encoding="utf-8") as json_file:
@@ -10,7 +11,7 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
 
 cookie = settings["url"]["webMapInfo"]["cookie"]
 
-
+os.remove("generate.log")
 # サークル情報の読み込み
 # with open("list.json", 'r', encoding="utf-8") as json_file:
 #     circleInfoJson = json.load(json_file)
