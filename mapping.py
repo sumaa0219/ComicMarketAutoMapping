@@ -8,8 +8,8 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
 print("settings loaded")
 
 
-def mapping(workbook, circlePlace, rank, outFileName):
-    colorName = settings["rankColor"]["rank" + str(rank)]
+def mapping(workbook, circlePlace, priority, outFileName):
+    colorName = settings["priorityColor"]["priority" + str(priority)]
     circlePlace = circlePlace
     colorHex = webcolors.name_to_hex(colorName)
     colorHex = colorHex[1:]
@@ -25,6 +25,6 @@ def mapping(workbook, circlePlace, rank, outFileName):
             start_color=colorHex, end_color=colorHex, fill_type='solid')
 
         print("mapping: " + circlePlace + " " +
-              colorName, "priority: " + str(rank))
+              colorName, "priority: " + str(priority))
 
     return workbook

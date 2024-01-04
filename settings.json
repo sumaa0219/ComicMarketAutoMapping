@@ -1,9 +1,9 @@
 {
-    "rankColor": {
-        "rank1": "yellow",
-        "rank2": "blue",
-        "rank3": "orange",
-        "rank4": "green",
-        "rank5": "red"
+    "priorityColor": {
+        "priority1": "yellow",
+        "priority2": "blue",
+        "priority3": "orange",
+        "priority4": "green",
+        "priority5": "red"
     }
 }

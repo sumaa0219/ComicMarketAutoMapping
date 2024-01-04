@@ -23,7 +23,7 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
             day1.append(circleID)
         elif day == "2":
             day2.append(circleID)
-    print("day1=", len(day1), "day2=", len(day2))
+    print("day1=", len(day1), "サークル", "day2=", len(day2), "サークル")
     print("load complete circleInfomation")
 
     for i, circleID in enumerate(circleJson):
@@ -87,17 +87,38 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
     workbook.save(outFileName)
 
 
-def genCircleInfoList(circleInfos, priorityInfos):
+def genCircleInfoList(circleInfos, itemInfos):
     infoList = {}
+    itemIDperCircle = []
+    counter = 0
+
     for circleInfo in circleInfos:
         if circleInfos[circleInfo]["deleted"] == False:
-            for priority in priorityInfos:
-                try:
-                    if circleInfos[circleInfo]["id"] == priority["circleId"]:
-                        circleInfos[circleInfo]["priority"] = priority["priority"]
-                        infoList.update(circleInfos)
-                except:
-                    pass
+            itemcircleList = []
+            for item in itemInfos:
+                if circleInfos[circleInfo]["id"] == itemInfoJson[item]["circleId"]:
+                    itemcircleList.append(itemInfos[item]["id"])
+            itemIDperCircle.append(itemcircleList)
+    # print(itemIDperCircle) #サークルごとのアイテムIDのリスト 必要なら出す
+
+    for circleInfo in circleInfos:
+        if circleInfos[circleInfo]["deleted"] == False:
+            for itemID in itemIDperCircle[counter]:
+                priotity = 0
+                for users in itemInfos[itemID]["users"]:
+                    if priotity < users["priority"]:
+                        priotity = users["priority"]
+            counter += 1
+            if priotity != 0:
+                circleInfos[circleInfo]["priority"] = priotity
+                infoList.update(circleInfos)
+
+    # try:
+    #     if circleInfos[circleInfo]["id"] == priority["circleId"]:
+    #         circleInfos[circleInfo]["priority"] = priority["priority"]
+    #         infoList.update(circleInfos)
+    # except:
+    #     pass
 
     return infoList
 
@@ -106,13 +127,14 @@ def genCircleInfoList(circleInfos, priorityInfos):
 with open("list.json", 'r', encoding="utf-8") as json_file:
     circleInfoJson = json.load(json_file)
 
-with open("priority.json", 'r', encoding="utf-8") as json_file:
-    priorityInfoJson = json.load(json_file)
+with open("item.json", 'r', encoding="utf-8") as json_file:
+    itemInfoJson = json.load(json_file)
 
 with open("aaa.json", 'r', encoding="utf-8") as json_file:
     aaa = json.load(json_file)
-Info = genCircleInfoList(circleInfoJson, priorityInfoJson)
-mapGen("c103.xlsm", Info, 1, "out2.xlsx")
+Info = genCircleInfoList(circleInfoJson, itemInfoJson)
+# print(Info)
+mapGen("c103.xlsm", Info, 2, "out2.xlsx")
 
 # サークル情報のjsonファイルの形式
 # "circleId1": {
