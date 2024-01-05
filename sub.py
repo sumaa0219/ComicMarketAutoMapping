@@ -17,10 +17,10 @@ cookie = settings["url"]["webMapInfo"]["cookie"]
 pf = system()
 # os.remove("generate.log")
 # サークル情報の読み込み
-with open("list.json", 'r', encoding="utf-8") as json_file:
-    circleInfoJson = json.load(json_file)
-# circleInfoJson = requests.get(
-#     "https://com-fork-c103.vercel.app/api/db/circle", allow_redirects=False).json()
+# with open("list.json", 'r', encoding="utf-8") as json_file:
+#     circleInfoJson = json.load(json_file)
+circleInfoJson = requests.get(
+    "https://com-fork-c103.vercel.app/api/db/circle", allow_redirects=False).json()
 print("サークル情報の読み込みが完了しました。")
 
 # 購入物情報の読み込み
