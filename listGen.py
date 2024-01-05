@@ -1,6 +1,6 @@
 import json
 import requests
-import time
+import os
 import re
 import logging
 import imgGen
@@ -22,7 +22,7 @@ with open("user.json", 'r', encoding="utf-8") as json_file:
 cookie = settings["url"]["webMapInfo"]["cookie"]
 
 
-def webCircleInfo(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList, day):
+def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList, day):
 
     mapDomainOrigin = settings["url"]["webMapInfo"]["domainOrigin"]
     mapInfo = settings["url"]["webMapInfo"]["mapInfo"]
@@ -52,6 +52,7 @@ def webCircleInfo(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList,
                 {circleID: circleWithPriorityInfoJson[circleID]})
     logging.info(f"{len(selectDayCircleJson)}個のサークルがリストに追加されます")
 
+    outputFileNameList = []
     for i, circleID in enumerate(selectDayCircleJson):
         try:
 
@@ -75,6 +76,43 @@ def webCircleInfo(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList,
                                           itemIDperCircleList[circleID], itemInfoJson, imageURL, userInfoJson)
 
             if image != "Noimage":
-                image.save(f"out/{circleID}.png")
-        except:
-            logging.error(f"サークル情報の取得に失敗しました。サークルの場所{place}")
+                path = os.path.join("out", circleID)
+                image.save(f"{path}.png")
+                outputFileNameList.append(f"{path}.png")
+        except Exception as e:
+            # logging.error(f"{e}")
+            pass
+    return outputFileNameList
+
+
+def buylistImageGen(circleInfo, day, hall):
+    mapDomainOrigin = settings["url"]["webMapInfo"]["domainOrigin"]
+    mapInfo = settings["url"]["webMapInfo"]["mapInfo"]
+
+    url = f"{mapDomainOrigin}{mapInfo}?day=Day{day}&hall={hall}"
+    response = requests.get(url, cookies=cookie, allow_redirects=False)
+    if response.status_code == 302:
+        logging.error(
+            f"ステータスコード{response.status_code} 権限エラーです。\n cookieを更新してください")
+
+    logging.info(
+        f"ステータスコード{response.status_code} {day}日目 {hall}のデータを取得しました。")
+
+    hallMapJson = response.json()
+
+    circleImageList = []
+    for hallMapPlace in hallMapJson:
+        for circleID in circleInfo:
+            place = circleInfo[circleID]["place"]
+            match = re.match(r"([^\d]*\d+)(\w+)", place)
+            if match:
+                base, suffixes = match.groups()
+                circlePlaces = [base + suffix for suffix in suffixes]
+                logging.debug(f"サークルの場所{place}は{circlePlaces}に変換されました")
+            else:
+                circlePlaces = [place]  # 注意　リスト型
+
+            if circlePlaces[0] == hallMapPlace and circleInfo[circleID]["day"] == str(day):
+                circleImageList.append(circleID)
+
+    imgGen.genDayBuylistImagePerHall(circleImageList, day, hall)

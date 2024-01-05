@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(filename='generate.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
-# 設定ファイルの読み込み
+# 設定ファイルssssの読み込み
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
 logging.info("マッピングのための設定を読み込みました。")

@@ -811,7 +811,7 @@
     },
     "50239868-feb5-44e9-a840-acd5ee2ee6db": {
         "name": "巌流アイランド",
-        "place": "ｍ01b",
+        "place": "m01b",
         "wing": "east",
         "deleted": false,
         "menuImagePath": "50239868-feb5-44e9-a840-acd5ee2ee6db/GCLu5N8bAAA6yjz.jpg",
@@ -1467,7 +1467,7 @@
     "826cc6e0-5007-4e91-bb9f-b516e804da85": {
         "name": "嘘つき屋",
         "deleted": false,
-        "place": "Ａ57ab",
+        "place": "A57ab",
         "wing": "east",
         "menuImagePath": "826cc6e0-5007-4e91-bb9f-b516e804da85/画像_2023-12-30_143940240.png",
         "day": "2",
@@ -1916,7 +1916,7 @@
     },
     "a1f5e5eb-9f10-4a3e-a920-f7a19488f6af": {
         "deleted": false,
-        "place": "Ａ01ab",
+        "place": "A01ab",
         "menuImagePath": "a1f5e5eb-9f10-4a3e-a920-f7a19488f6af/クレスタ.jpg",
         "name": "クレスタ",
         "day": "2",
@@ -2167,7 +2167,7 @@
     "be7d4ac7-f687-4339-88e5-40d44201453d": {
         "name": "無糖紅茶",
         "menuImagePath": "be7d4ac7-f687-4339-88e5-40d44201453d/画像_2023-12-28_220321704.png",
-        "place": "Ｍ36a",
+        "place": "M36a",
         "day": "2",
         "wing": "east",
         "deleted": false,
@@ -2564,7 +2564,7 @@
     },
     "efa832b4-5a41-48aa-988f-c4aac76799e2": {
         "day": "1",
-        "place": "ｍ01a",
+        "place": "m01a",
         "wing": "east",
         "deleted": false,
         "menuImagePath": "efa832b4-5a41-48aa-988f-c4aac76799e2/GBhXeakboAARDm4.jpg",
@@ -2755,7 +2755,7 @@
         "name": "やわもち",
         "deleted": false,
         "wing": "east",
-        "place": "ｍ08a",
+        "place": "m08a",
         "id": "ff865fee-cea5-4e76-93b1-72fcf44358e9"
     },
     "ffa24b41-80e8-41f4-8c55-8d95dbbacf01": {

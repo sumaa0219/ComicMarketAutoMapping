@@ -1,10 +1,10 @@
 {
     "priorityColor": {
-        "priority1": "yellow",
+        "priority5": "red",
+        "priority4": "orange",
+        "priority3": "magenta",
         "priority2": "blue",
-        "priority3": "orange",
-        "priority4": "green",
-        "priority5": "red"
+        "priority1": "yellow"
     },
     "url": {
         "webapp": {
@@ -17,7 +17,7 @@
             "domainOrigin": "https://webcatalog-free.circle.ms",
             "mapInfo": "/Map/GetMapping2",
             "cookie": {
-                ".ASPXAUTH": "83A76B3BC1EF398F7C8565D81F4F06668CE02E464A40D639A00B536F6A9AA58A1F4E1C37A1A1332DBABDA33147435B9FFB17BE75BE016E3936AE341FEE6E404DA534ED9FA27068BF5D55F5B60D6B44521F0D05524F756BE598E2CBD9403870C88B81E5CB7486CEC04B88E39D6A50C064C8F2E6063A769256BE975D0D1F0620644F2E28B49CA76E6972CE9AAC4F566BA2F0B238A9D9C620A49D9D95563C4A5E3DB335DDD84A948FCD072EB45593F738711CD7B33BE560A421A8F3846A2CEDB2008B32F14AEEC1244EEB27DFFA99473E6B9FFE249665EE739CCAB4D3B1E779568A881B7FD799AE9C8B206FB8FFAA877BE83433D429AA887B955511782ABCC4C756C98850E315816ED1715BF29C15A68B2AAD38FFAF47964D078E051B31B2D5A9837BD7E8D1D358297922A792B7E438D0A467542A070713A9AE1A40FC3E94E84EB02A44665AA822A3206342718198AA0E76201BE0E017E6E8055474D101F343F983FA09ACD4EFB3AF51BDA361FB6F5A8DE681BCE8C1D31D360317C9C94CFC95D7077CCB714F93C7A0E614A1A2CAA5E76D9590852C57643DDC8A5A490B3E9B228A3C8921CBF1B11ABA823BDB6057A32A145A07EE8EA03002E2202512AE647F4CA5C97EFD45B64182F3C49CBD15033AA69A7A31935DBC4804BB00056DCA4332EE629D36591130DDA9F56A0170705012E278625E266E5F3AABC9A787748D776B3CBE4B2B8EADEC7C61D1E9ADB7E7F951BFC7992DF9E1BEA12EBF074DC9C67BB17170D845EE6705A28BEC10727B37A9FC8013AF84F819923291FEFCE811506DB22103296D7D7BBB1349AEAD9E33EB3A0F3E753734842E62"
+                ".ASPXAUTH": "662E4C10720E7336E5E31DD06A4FBD293E93E70B32635F742B6A4BFB56D2AF71AD7BACDFB383F293CCEE8EB6BD2BA4FBA50DFFCEE72058943C8FFF7E105B3E5EBD78A61F98A7B52E4E875DD7119505A8E063454A257CD3014F50472EF561A1C10378B24432B6174431E21FD0A0EBD8E92697A6243E3D2CB875466E447C5C01E3DF7F875FD88E3EA9A1ABC036D5677FE893D3E95283765C5E35E63E9208FE13BD569B522CFFAD9A9D29B4E962B55A91292391F1383E819386C1C87AC6FE22ED5E565BFF63641904152361CC96BD21C710D142CCDEBB760EC2D14F858B25C0C2D4EA5FBFD8FD6D3B4BBB0F2B656E04D2FBB48FD04005BE87D5AB5C22CBB971105802DFCB64E031950ACED59260CFAA62D2A4D95164E9B19A4CBEBE0BB318B05AF5B163340B478544782CCD97699822C16ADA88953336C14B2FA004BF3F0DE09A841C0434AAB5ACD9AB5218141B35438BF53A80CE4205DC73DF25EC85DC5E4CF06413416ABD763BDF92EAA736EDF103DE2017E4E291E7A3D4B61BA6E453AE44624EFADE1147B050D61B377A385727584CDB964E9ECABFE9127D3CBDA79C7730DD5D5C9DAF493657C438B46F369655FC08C2E5CC2FE1122FFB1777D6FD2F3BF83D339A9864822CA907E349BE3797DDA5741908C53A3BDDF90642612D145BA8ABF338D135901E88E5F4AAE45B8B5307DE462D1375CA298C2389C607846BCCA752EF4CF0C9BDF50CBA32F0508688A3D248D756755D1C2D7D64F3B8C2E645EBE982489080319B17FB89A92261015FD5E239D224CE58D72802EB8FB119B14C2B693451364DA13C4567BF3F0A1615499334CCE7182F4453E3"
             },
             "mapDataName": "mapData.json"
         }
@@ -27,5 +27,151 @@
         "2": "e456",
         "3": "e7",
         "4": "w12"
+    },
+    "date": {
+        "1": "土",
+        "2": "日"
+    },
+    "buyListPosition": {
+        "1": {
+            "x": 11,
+            "y": 22
+        },
+        "2": {
+            "x": 67,
+            "y": 22
+        },
+        "3": {
+            "x": 123,
+            "y": 22
+        },
+        "4": {
+            "x": 179,
+            "y": 22
+        },
+        "5": {
+            "x": 235,
+            "y": 22
+        },
+        "6": {
+            "x": 11,
+            "y": 48
+        },
+        "7": {
+            "x": 67,
+            "y": 48
+        },
+        "8": {
+            "x": 123,
+            "y": 48
+        },
+        "9": {
+            "x": 179,
+            "y": 48
+        },
+        "10": {
+            "x": 235,
+            "y": 48
+        },
+        "11": {
+            "x": 11,
+            "y": 74
+        },
+        "12": {
+            "x": 67,
+            "y": 74
+        },
+        "13": {
+            "x": 123,
+            "y": 74
+        },
+        "14": {
+            "x": 179,
+            "y": 74
+        },
+        "15": {
+            "x": 235,
+            "y": 74
+        },
+        "16": {
+            "x": 11,
+            "y": 100
+        },
+        "17": {
+            "x": 67,
+            "y": 100
+        },
+        "18": {
+            "x": 123,
+            "y": 100
+        },
+        "19": {
+            "x": 179,
+            "y": 100
+        },
+        "20": {
+            "x": 235,
+            "y": 100
+        },
+        "21": {
+            "x": 11,
+            "y": 126
+        },
+        "22": {
+            "x": 67,
+            "y": 126
+        },
+        "23": {
+            "x": 123,
+            "y": 126
+        },
+        "24": {
+            "x": 179,
+            "y": 126
+        },
+        "25": {
+            "x": 235,
+            "y": 126
+        },
+        "26": {
+            "x": 11,
+            "y": 152
+        },
+        "27": {
+            "x": 67,
+            "y": 152
+        },
+        "28": {
+            "x": 123,
+            "y": 152
+        },
+        "29": {
+            "x": 179,
+            "y": 152
+        },
+        "30": {
+            "x": 235,
+            "y": 152
+        },
+        "31": {
+            "x": 11,
+            "y": 178
+        },
+        "32": {
+            "x": 67,
+            "y": 178
+        },
+        "33": {
+            "x": 123,
+            "y": 178
+        },
+        "34": {
+            "x": 179,
+            "y": 178
+        },
+        "35": {
+            "x": 235,
+            "y": 178
+        }
     }
 }
