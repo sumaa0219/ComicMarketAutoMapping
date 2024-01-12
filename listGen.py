@@ -16,13 +16,13 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
 logging.info("リスト作成のための設定を読み込みました。")
 
 # ユーザーの読み込み  消して！！！！
-with open("user.json", 'r', encoding="utf-8") as json_file:
-    userInfoJson = json.load(json_file)
+# with open("user.json", 'r', encoding="utf-8") as json_file:
+#     userInfoJson = json.load(json_file)
 
 cookie = settings["url"]["webMapInfo"]["cookie"]
 
 
-def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList, day):
+def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList, day, userInfoJson):
 
     mapDomainOrigin = settings["url"]["webMapInfo"]["domainOrigin"]
     mapInfo = settings["url"]["webMapInfo"]["mapInfo"]
