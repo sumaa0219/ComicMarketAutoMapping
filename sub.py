@@ -39,11 +39,11 @@ print("ユーザー情報の読み込みが完了しました。")
 
 Info, itemIDperCircle = mapGen.genCircleInfoList(circleInfoJson, itemInfoJson)
 # mapGen.mapGen("c103.xlsm", Info, 1, "out2.xlsx")
-# print(Info)
-listGen.circleInfoImageGen(
-    Info, itemInfoJson, itemIDperCircle, 1, userInfoJson)
-print("サークル情報の画像生成が完了しました。")
-pathlist = listGen.buylistImageGen(Info, 1, "w12")
+print(Info, itemIDperCircle)
+# listGen.circleInfoImageGen(
+#     Info, itemInfoJson, itemIDperCircle, 1, userInfoJson)
+# print("サークル情報の画像生成が完了しました。")
+# pathlist = listGen.buylistImageGen(Info, 1, "w12")
 
 
 if pf == "Darwin":

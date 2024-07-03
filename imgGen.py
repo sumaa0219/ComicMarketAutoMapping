@@ -9,7 +9,7 @@ import os
 import img2pdf
 
 # ログの設定
-logging.basicConfig(filename='example.log', level=logging.INFO,
+logging.basicConfig(filename='generate.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
 with open('settings.json', 'r', encoding="utf-8") as json_file:

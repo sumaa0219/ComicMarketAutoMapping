@@ -40,6 +40,11 @@ def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircle
         logging.info(
             f"ステータスコード{response.status_code} {day}日目 {hall}のデータを取得しました。")
         mapJson.update(response.json())
+        # 以下のようなデータが取得される
+        # あ01a: {
+        #     wid: 19016572,
+        #     id: 10435692
+        #     }
 
     logging.info("マップデータの取得が完了しました。")
     # with open('mapData.json', 'w', encoding="utf-8") as f:

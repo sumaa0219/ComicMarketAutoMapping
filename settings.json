@@ -29,8 +29,31 @@
         "4": "w12"
     },
     "date": {
-        "1": "土",
-        "2": "日"
+        "1": "日",
+        "2": "月"
+    },
+    "map": {
+        "baseMapAssetsDir": "mapimage",
+        "maxMapWidthPerImage": 5,
+        "cellSize": 21,
+        "startPosition": {
+            "e123": {
+                "x": 0,
+                "y": 0
+            },
+            "e456": {
+                "x": 0,
+                "y": 0
+            },
+            "e7": {
+                "x": 0,
+                "y": 0
+            },
+            "w12": {
+                "x": 0,
+                "y": 0
+            }
+        }
     },
     "buyListPosition": {
         "1": {
