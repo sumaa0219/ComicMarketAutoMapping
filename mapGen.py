@@ -1,24 +1,29 @@
-# from mapping import mapping
 import json
 import re
-import openpyxl
 import logging
+import requests
+from mapping import mapping
+from PIL import Image, ImageDraw
+import os
 
 # ログの設定
 logging.basicConfig(filename='generate.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', encoding='utf-8')
 
+with open('settings.json', 'r', encoding="utf-8") as json_file:
+    settings = json.load(json_file)
 
-def mapGen(excelFileName, circleJson, dayOption, outFileName):
+
+def mapGen(hall, circleJson, dayOption, outFileName):
 
     day1 = []
     day2 = []
     day1Counter = 0
     day2Counter = 0
 
-    # ワークブックを読み込む
-    workbook = openpyxl.load_workbook(excelFileName)
-    logging.info(f"マップデータ<{excelFileName}>の読み込みを完了しました。")
+    imagePath = os.path.join(
+        settings["map"]["baseMapAssetsDir"], "out", f"{hall}-day{day}.png")
+    image = Image.open(imagePath)
 
     for circleID in circleJson:
         # サークル情報の取得
@@ -42,26 +47,27 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
         match = re.match(r"([^\d]*\d+)(\w+)", circlePlace)
         if match:
             base, suffixes = match.groups()
-            circlePlaces = ["_" + base + suffix for suffix in suffixes]
+            circlePlaces = [base + suffix for suffix in suffixes]
         else:
-            circlePlaces = ["_" + circlePlace]  # 注意　リスト型
+            circlePlaces = [circlePlace]  # 注意　リスト型
 
         day = circleInfo["day"]
         priority = circleInfo["priority"]
+        print(circlePlaces)
         # オプションによって生成回数の変更(最後)
         if dayOption == 1:
             if day == "1":
                 for circlePlace in circlePlaces:
-                    workbook = mapping(workbook, circlePlace,
-                                       priority)
+                    image = mapping(image, hall, circlePlace,
+                                    priority)
                     logging.debug(f"サークルマッピング:{circlePlace} {priority}")
-                    # logging.info(f"{len(day1)/day1Counter * 100}%完了")
+                    # print(f"{len(day1)/day1Counter * 100}%完了")
                     day1Counter += 1
         elif dayOption == 2:
             if day == "2":
                 for circlePlace in circlePlaces:
-                    workbook = mapping(workbook, circlePlace,
-                                       priority)
+                    image = mapping(image, hall, circlePlace,
+                                    priority)
                     logging.debug(f"サークルマッピング:{circlePlace} {priority}")
                     # logging.info(f"{len(day2)/day2Counter * 100}%完了")
                     day2Counter += 1
@@ -69,8 +75,8 @@ def mapGen(excelFileName, circleJson, dayOption, outFileName):
             logging.error("dayOptionの値が不正です。再度実行してください。")
             break
 
-    # 保存
-    workbook.save(outFileName)
+    # # 保存
+    image.save(outFileName)
     logging.info(f"マップデータ<{ outFileName}>の作成及び保存を完了しました。")
 
 

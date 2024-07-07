@@ -19,7 +19,7 @@ logging.info("リスト作成のための設定を読み込みました。")
 # with open("user.json", 'r', encoding="utf-8") as json_file:
 #     userInfoJson = json.load(json_file)
 
-cookie = settings["url"]["webMapInfo"]["cookie"]
+cookie = settings["url"]["cookie"]
 
 
 def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircleList, day, userInfoJson):

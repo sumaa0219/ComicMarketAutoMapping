@@ -12,7 +12,7 @@ from platform import system
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
 
-cookie = settings["url"]["webMapInfo"]["cookie"]
+cookie = settings["url"]["cookie"]
 
 pf = system()
 # os.remove("generate.log")
@@ -38,8 +38,8 @@ userInfoJson = requests.get(
 print("ユーザー情報の読み込みが完了しました。")
 
 Info, itemIDperCircle = mapGen.genCircleInfoList(circleInfoJson, itemInfoJson)
-# mapGen.mapGen("c103.xlsm", Info, 1, "out2.xlsx")
-print(Info, itemIDperCircle)
+mapGen.mapGen("w12", Info, 1, "1日目西ホール.png")
+# print(Info, itemIDperCircle)
 # listGen.circleInfoImageGen(
 #     Info, itemInfoJson, itemIDperCircle, 1, userInfoJson)
 # print("サークル情報の画像生成が完了しました。")

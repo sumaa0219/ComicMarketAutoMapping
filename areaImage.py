@@ -102,7 +102,9 @@ def getFullImageWidthHigh(instrationMapImageList):
 
 
 def genMapGridData(areaName):
-    startPosition = settings["map"]["startPosition"][areaName]
+    AreaName = areaName[:-5]
+    print(AreaName)
+    startPosition = settings["map"]["startPosition"][AreaName]
     cellSize = settings["map"]["cellSize"]
     imageFilePath = os.path.join(
         settings["map"]["baseMapAssetsDir"], "out", f"{areaName}.png")
@@ -159,9 +161,9 @@ def tryGrid(areaName):  # 使わない（デバック用）
                            outline='red', fill=None)
 
     # Save the image
-    image.save('squares.png')
+    image.save(f'{areaName}_grid.png')
 
 
 genAllAreaMapImage()  # 基本これだけ実行でOK
 # genMapGridData("w12")
-# tryGrid("w12")
+# tryGrid("e123")

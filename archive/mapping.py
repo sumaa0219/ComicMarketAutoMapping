@@ -16,17 +16,17 @@ logging.info("マッピングのための設定を読み込みました。")
 def mapping(workbook, circlePlace, priority):
     colorName = settings["priorityColor"]["priority" + str(priority)]
     circlePlace = circlePlace
-    colorHex = webcolors.name_to_hex(colorName)
-    colorHex = colorHex[1:]
+    colorHex = webcolors.name_to_hex(color_
+    colorHex=colorHex[1:]
 
     # 名前が定義されたセルを探す
     if circlePlace in workbook.defined_names:
-        sheet_title, cell_coordinate = next(
+        sheet_title, cell_coordinate=next(
             workbook.defined_names[circlePlace].destinations)
-        target_cell = workbook[sheet_title][cell_coordinate]
+        target_cell=workbook[sheet_title][cell_coordinate]
 
         # セルの色を変更
-        target_cell.fill = openpyxl.styles.PatternFill(
+        target_cell.fill=openpyxl.styles.PatternFill(
             start_color=colorHex, end_color=colorHex, fill_type='solid')
 
         logging.debug(

@@ -16,7 +16,7 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
 logging.info("画像生成のための設定を読み込みました。")
 
-cookie = settings["url"]["webMapInfo"]["cookie"]
+cookie = settings["url"]["cookie"]
 
 
 def genCircleImage(circleInfofromWeb, circleInfo, BuyItemList, itemList, imageURL, userInfo):
