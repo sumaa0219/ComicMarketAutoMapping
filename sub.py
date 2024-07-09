@@ -38,7 +38,7 @@ userInfoJson = requests.get(
 print("ユーザー情報の読み込みが完了しました。")
 
 Info, itemIDperCircle = mapGen.genCircleInfoList(circleInfoJson, itemInfoJson)
-mapGen.mapGen("w12", Info, 1, "1日目西ホール.png")
+mapGen.mapGen("e123", Info, 2, "2日目東ホール.png")
 # print(Info, itemIDperCircle)
 # listGen.circleInfoImageGen(
 #     Info, itemInfoJson, itemIDperCircle, 1, userInfoJson)

@@ -15,7 +15,7 @@ beforeMapNmame = ""
 positionList = []
 
 
-def mapping(image: Image, hall: str, circlePlace, priority):
+def mapping(image: Image, hall: str, day: int, circlePlace, priority):
     global beforeMapNmame, positionList
 
     url = settings["url"]["webMapData"]["domainOrigin"] + \
@@ -40,7 +40,7 @@ def mapping(image: Image, hall: str, circlePlace, priority):
     print(positionList[count])
     circlePlaceData = positionList[count]
 
-    positionDataList = areaImage.openGridFile(hall)
+    positionDataList = areaImage.openGridFile(hall, day)
     position = positionDataList[circlePlaceData["locate"]
                                 [0]][circlePlaceData["locate"][1]]
 

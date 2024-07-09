@@ -22,7 +22,7 @@ def mapGen(hall, circleJson, dayOption, outFileName):
     day2Counter = 0
 
     imagePath = os.path.join(
-        settings["map"]["baseMapAssetsDir"], "out", f"{hall}-day{day}.png")
+        settings["map"]["baseMapAssetsDir"], "out", f"{hall}-day{dayOption}.png")
     image = Image.open(imagePath)
 
     for circleID in circleJson:
@@ -58,7 +58,7 @@ def mapGen(hall, circleJson, dayOption, outFileName):
         if dayOption == 1:
             if day == "1":
                 for circlePlace in circlePlaces:
-                    image = mapping(image, hall, circlePlace,
+                    image = mapping(image, hall, dayOption, circlePlace,
                                     priority)
                     logging.debug(f"サークルマッピング:{circlePlace} {priority}")
                     # print(f"{len(day1)/day1Counter * 100}%完了")
@@ -66,7 +66,7 @@ def mapGen(hall, circleJson, dayOption, outFileName):
         elif dayOption == 2:
             if day == "2":
                 for circlePlace in circlePlaces:
-                    image = mapping(image, hall, circlePlace,
+                    image = mapping(image, hall, dayOption, circlePlace,
                                     priority)
                     logging.debug(f"サークルマッピング:{circlePlace} {priority}")
                     # logging.info(f"{len(day2)/day2Counter * 100}%完了")

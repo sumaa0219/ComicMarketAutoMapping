@@ -127,9 +127,9 @@ def genMapGridData(areaName):
             f.write(' '.join(map(str, row)) + '\n')
 
 
-def openGridFile(areaName):
+def openGridFile(areaName, day):
     filePath = os.path.join(
-        settings["map"]["baseMapAssetsDir"], "out", f"{areaName}.txt")
+        settings["map"]["baseMapAssetsDir"], "out", f"{areaName}-day{day}.txt")
     with open(filePath, 'r') as f:
         rowData = f.readlines()
 
@@ -164,6 +164,6 @@ def tryGrid(areaName):  # 使わない（デバック用）
     image.save(f'{areaName}_grid.png')
 
 
-genAllAreaMapImage()  # 基本これだけ実行でOK
+# genAllAreaMapImage()  # 基本これだけ実行でOK
 # genMapGridData("w12")
 # tryGrid("e123")
