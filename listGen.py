@@ -81,9 +81,9 @@ def circleInfoImageGen(circleWithPriorityInfoJson, itemInfoJson, itemIDperCircle
                                           itemIDperCircleList[circleID], itemInfoJson, imageURL, userInfoJson)
 
             if image != "Noimage":
-                path = os.path.join("out", circleID)
-                image.save(f"{path}.png")
-                outputFileNameList.append(f"{path}.png")
+                path = os.path.join("out", "toBuyList", f"{circleID}.png")
+                image.save(path)
+                outputFileNameList.append(path)
         except Exception as e:
             # logging.error(f"{e}")
             pass

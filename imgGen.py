@@ -16,6 +16,13 @@ with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
 logging.info("画像生成のための設定を読み込みました。")
 
+if os.path.exists("out") == False:
+    os.mkdir("out")
+if os.path.exists("out/buyListImage") == False:
+    os.mkdir("out/buyListImage")
+if os.path.exists("out/toBuyList") == False:
+    os.mkdir("out/toBuyList")
+
 cookie = settings["url"]["cookie"]
 
 
@@ -161,7 +168,7 @@ def genDayBuylistImagePerHall(circleIDList, day, hall):
         for x in range(35):
             try:
                 path = os.path.join(
-                    "out", circleIDList[x+(i*35)] + ".png")
+                    "out", "toBuyList", circleIDList[x+(i*35)] + ".png")
                 circleImage = Image.open(path)
                 position = settings["buyListPosition"][str(int(x)+1)]
                 new_image.paste(circleImage, (mm_to_pixels(
@@ -202,13 +209,18 @@ def genDayBuylistImagePerHall(circleIDList, day, hall):
                 draw.text((positionX+mm_to_pixels(
                     baseSizemm+2), positionY), priorityRank_jp, font=font, fill=text_color)
 
-        new_image.save(f"buylist_Day{day}_{originHall}_{i}.png")
-        fileList.append(f"buylist_Day{day}_{originHall}_{i}.png")
+        new_image.save(os.path.join("out", "buyListImage",
+                       f"buylist_Day{day}_{originHall}_{i}.png"))
+        fileList.append(os.path.join("out", "buyListImage",
+                        f"buylist_Day{day}_{originHall}_{i}.png"))
 
-    pdfFileName = f'buylist_day{day}_{originHall}.pdf'
+    pdfFileName = os.path.join("out", f'buylist_day{day}_{originHall}.pdf')
 
-    with open(pdfFileName, "wb") as f:
-        f.write(img2pdf.convert(fileList))
+    if fileList:  # fileListが空でないことを確認
+        with open(pdfFileName, "wb") as f:
+            f.write(img2pdf.convert(fileList))
+    else:
+        logging.warning(f"{pdfFileName} は空のためスキップされました。")
 
 
 def mm_to_pixels(mm_size):

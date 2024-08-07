@@ -18,6 +18,7 @@ positionList = []
 def mapping(image: Image, hall: str, day: int, circlePlace, priority):
     global beforeMapNmame, positionList
 
+    logging.info(f"{circlePlace}のマップの位置データを取得します")
     url = settings["url"]["webMapData"]["domainOrigin"] + \
         settings["url"]["webMapData"]["mapData"] + hall
     cookie = settings["url"]["cookie"]
@@ -32,7 +33,7 @@ def mapping(image: Image, hall: str, day: int, circlePlace, priority):
 
     space_dict = preprocess_data(positionList)
 
-    basePlace = circlePlace.replace("a", "").replace("b", "").replace("ab", "")
+    basePlace = circlePlace[:3]
     try:
         count = space_dict[basePlace]
     except KeyError:
@@ -59,6 +60,7 @@ def mapping(image: Image, hall: str, day: int, circlePlace, priority):
     print("base", x, y, x_end, y_end)
 
     palce = circlePlace[3:]
+    print(palce)
     x_start_correction, y_start_correction, x_end_correction, y_end_correction = abPosition(
         circlePlaceData["dirbase"][0], palce)
 
@@ -145,7 +147,7 @@ def abPosition(base, place):
             x_end_correction = 0
             y_end_correction = base_correction
         elif base == "上":
-            x_start_correction = base_correction
+            x_start_correction = -base_correction
             y_start_correction = 0
             x_end_correction = base_correction
             y_end_correction = base_correction
@@ -157,9 +159,9 @@ def abPosition(base, place):
     return x_start_correction, y_start_correction, x_end_correction, y_end_correction
 
 
-# image = Image.open("mapimage/out/w12.png")
+# image = Image.open("mapimage/out/e7-day2.png")
 
-# image = mapping(image, "w12", "め43a", 5)
-# image = mapping(image, "w12", "め54ab", 3)
+# image = mapping(image, "w12", 1, "の42a", 5)
+# image = mapping(image, "e7", 2, "a35a", 5)
 
 # image.save("result.png")
