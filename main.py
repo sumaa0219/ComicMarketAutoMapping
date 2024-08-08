@@ -1,118 +1,82 @@
-import tkinter as tk
-from tkinter import filedialog
-from tkinter import messagebox
+import discord
+from discord import app_commands
+import os
+from dotenv import load_dotenv
+import datetime
+import json
+import requests
+import mapGen
+import listGen
 
 
-class Application(tk.Frame):
-    def __init__(self, master=None):
-        super().__init__(master)
-        self.master = master
-        self.grid()
+load_dotenv()
+TOKEN = os.environ['token']
+logServer = os.environ['logServer']
+logChannel = os.environ['logChannel']
 
-        # Configure the grid
-        self.master.grid_columnconfigure(0, weight=1)
-        self.master.grid_rowconfigure(0, weight=1)
-
-        self.create_widgets()
-
-    def create_widgets(self):
-        self.file1_label = tk.Label(self, text="マップデータ")
-        self.file1_label.grid(row=0, column=0, sticky=tk.E + tk.W)
-
-        self.file1_entry = tk.Entry(self)
-        self.file1_entry.grid(row=1, column=0, sticky=tk.E + tk.W)
-
-        self.file1_button = tk.Button(self)
-        self.file1_button["text"] = "マップデータを選択"
-        self.file1_button["command"] = self.select_file1
-        self.file1_button.grid(row=2, column=0, sticky=tk.E + tk.W)
-
-        self.file2_label = tk.Label(self, text="購入物リスト")
-        self.file2_label.grid(row=0, column=1, sticky=tk.E + tk.W)
-
-        self.file2_entry = tk.Entry(self)
-        self.file2_entry.grid(row=1, column=1, sticky=tk.E + tk.W, padx=20)
-
-        self.file2_button = tk.Button(self)
-        self.file2_button["text"] = "購入物リストを選択"
-        self.file2_button["command"] = self.select_file2
-        self.file2_button.grid(row=2, column=1, sticky=tk.E + tk.W, padx=20)
-
-        self.file3_label = tk.Label(self, text="優先度リスト")
-        self.file3_label.grid(row=0, column=2, sticky=tk.E + tk.W)
-
-        self.file3_entry = tk.Entry(self)
-        self.file3_entry.grid(row=1, column=2, sticky=tk.E + tk.W, padx=20)
-
-        self.file3_button = tk.Button(self)
-        self.file3_button["text"] = "優先度リストを選択"
-        self.file3_button["command"] = self.select_file3
-        self.file3_button.grid(row=2, column=2, sticky=tk.E + tk.W, padx=20)
-
-        self.option1 = tk.IntVar()
-        self.option1_check = tk.Checkbutton(
-            self, text="1日目", variable=self.option1)
-        self.option1_check.grid(row=3, column=0, sticky=tk.E + tk.W)
-
-        self.option2 = tk.IntVar()
-        self.option2_check = tk.Checkbutton(
-            self, text="2日目", variable=self.option2)
-        self.option2_check.grid(row=3, column=1, sticky=tk.E + tk.W)
-
-        self.output_label = tk.Label(self, text="出力ファイル名")
-        self.output_label.grid(
-            row=4, column=0, columnspan=2, sticky=tk.E + tk.W)
-
-        self.output_entry = tk.Entry(self)
-        self.output_entry.grid(
-            row=5, column=0, columnspan=2, sticky=tk.E + tk.W)
-
-        self.run_button = tk.Button(self)
-        self.run_button["text"] = "作成"
-        self.run_button["command"] = self.run
-        self.run_button.config(font=("Helvetica", 24))
-        self.run_button.grid(row=6, column=0, columnspan=2, sticky=tk.E + tk.W)
-
-    def select_file1(self):
-        filename = filedialog.askopenfilename(
-            filetypes=[("Excel file", "*.xlsx;*.xls;*.xlsm")])
-        if filename:
-            self.file1_entry.delete(0, tk.END)
-            self.file1_entry.insert(0, filename)
-
-    def select_file2(self):
-        filename = filedialog.askopenfilename(
-            filetypes=[("Json file", "*.json")])
-        if filename:
-            self.file2_entry.delete(0, tk.END)
-            self.file2_entry.insert(0, filename)
-
-    def select_file3(self):
-        filename = filedialog.askopenfilename(
-            filetypes=[("Json file", "*.json")])
-        if filename:
-            self.file3_entry.delete(0, tk.END)
-            self.file3_entry.insert(0, filename)
-
-    def run(self):
-        file1 = self.file1_entry.get()
-        file2 = self.file2_entry.get()
-        file3 = self.file3_entry.get()
-        output = self.output_entry.get()
-
-        if not file1 or not file2 or not output:
-            messagebox.showerror(
-                "Error", "Please select both files and specify an output file name.")
-            return
-
-        # ここでファイルを処理します
-        # ...
-        print(file1)
-
-        messagebox.showinfo("Success", "Operation completed successfully.")
+intents = discord.Intents.all()  # 適当に。
+intents.message_content = True
+client = discord.Client(intents=intents)
+tree = app_commands.CommandTree(client)
 
 
-root = tk.Tk()
-root.geometry("670x220")
-app = Application(master=root)
-app.mainloop()
+@client.event
+async def on_ready():
+    # await send_console("起動しました")
+    # await tree.sync()  # スラッシュコマンドを同期
+    print("起動しました")
+
+
+@tree.command(name="generate", description="地図と買い物リストを生成します")
+async def generate(interaction: discord.Interaction):
+    await interaction.response.defer()
+    # 設定ファイルの読み込み
+    with open('settings.json', 'r', encoding="utf-8") as json_file:
+        settings = json.load(json_file)
+
+    # cookie = settings["url"]["cookie"]
+
+    circleInfoJson = requests.get(
+        "https://com-fork-c104.vercel.app/api/db/circle", allow_redirects=False).json()
+    print("サークル情報の読み込みが完了しました。")
+
+    itemInfoJson = requests.get(
+        "https://com-fork-c104.vercel.app/api/db/item", allow_redirects=False).json()
+    print("購入物情報の読み込みが完了しました。")
+
+    userInfoJson = requests.get(
+        "https://com-fork-c104.vercel.app/api/db/user", allow_redirects=False).json()
+    print("ユーザー情報の読み込みが完了しました。")
+
+    Info, itemIDperCircle = mapGen.genCircleInfoList(
+        circleInfoJson, itemInfoJson)
+
+    for day in [1, 2]:
+        listGen.circleInfoImageGen(
+            Info, itemInfoJson, itemIDperCircle, day, userInfoJson)
+        print("サークル情報の画像生成が完了しました。")
+        for hallOption in settings["block"]:
+            hall = settings["block"][hallOption]
+            mapGen.mapGen(hall, Info, day, f"out/map_day{day}_{hall}.png")
+
+            # print(Info, itemIDperCircle)
+
+            pathlist = listGen.buylistImageGen(Info, day, hall)
+
+    # outディレクトリのフォルダー以外を取得する
+    # outディレクトリのパス
+    out_dir = 'out'
+    # outディレクトリ内のフォルダー以外のファイルを取得
+    files = [f for f in os.listdir(
+        out_dir) if os.path.isfile(os.path.join(out_dir, f))]
+
+    await interaction.followup.send("地図と購入リストを生成しました", files=files)
+
+
+async def send_console(message):
+    guild = client.get_guild(int(logServer))
+    channel = guild.get_channel(int(logChannel))
+    await channel.send(message)
+
+
+client.run(TOKEN)
