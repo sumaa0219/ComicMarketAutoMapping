@@ -23,7 +23,7 @@ tree = app_commands.CommandTree(client)
 @client.event
 async def on_ready():
     # await send_console("起動しました")
-    # await tree.sync()  # スラッシュコマンドを同期
+    await tree.sync()  # スラッシュコマンドを同期
     print("起動しました")
 
 
