@@ -22,6 +22,10 @@ if os.path.exists("out/buyListImage") == False:
     os.mkdir("out/buyListImage")
 if os.path.exists("out/toBuyList") == False:
     os.mkdir("out/toBuyList")
+if os.path.exists("out/maplist") == False:
+    os.mkdir("out/maplist")
+if os.path.exists("out/buylist") == False:
+    os.mkdir("out/buylist")
 
 cookie = settings["url"]["cookie"]
 
@@ -97,6 +101,7 @@ def genCircleImage(circleInfofromWeb, circleInfo, BuyItemList, itemList, imageUR
     draw.rectangle(rectangle_position, fill=colorHex)
 
     resultCounter = 0
+    buylistNum = len(BuyItemList)
     # 購入物の表示
     for itemIdNUm in BuyItemList:
         itemID = BuyItemList[itemIdNUm]
@@ -119,11 +124,14 @@ def genCircleImage(circleInfofromWeb, circleInfo, BuyItemList, itemList, imageUR
                 text += f"{name} "
             # print(text)
             if text != "":
-                item_font_size = 45
+                if buylistNum == 1:
+                    item_font_size = 55
+                else:
+                    item_font_size = 35
                 font = ImageFont.truetype(
                     "GenEiNuGothic-EB.ttf", item_font_size)
                 position_width = mm_to_pixels(16)
-                position_height = mm_to_pixels(16+2*int(resultCounter))
+                position_height = mm_to_pixels(15+1.5*int(resultCounter))
                 # テキストの幅が画像の幅を超えているか確認
                 while round(draw.textlength(text, font=font)) > image_width-position_width-padding:
                     # テキストの幅が画像の幅を超えている場合、フォントサイズを小さくする
@@ -136,9 +144,10 @@ def genCircleImage(circleInfofromWeb, circleInfo, BuyItemList, itemList, imageUR
             resultCounter += 1
         else:
             pass
-        if int(resultCounter) > 3:
+        if int(resultCounter) > 7:
             logging.warning(
-                f"サークル{circleInfofromWeb['Name']}の購入物が3つ以上あります。すべて表示されていません。確認してください。")
+                f"サークル{circleInfofromWeb['Name']}の購入物が7つ以上あります。すべて表示されていません。確認してください。")
+
     if resultCounter > 0:
         return new_image
     else:
@@ -214,7 +223,8 @@ def genDayBuylistImagePerHall(circleIDList, day, hall):
         fileList.append(os.path.join("out", "buyListImage",
                         f"buylist_Day{day}_{originHall}_{i}.png"))
 
-    pdfFileName = os.path.join("out", f'buylist_day{day}_{originHall}.pdf')
+    pdfFileName = os.path.join(
+        "out", "buylist", f'buylist_day{day}_{originHall}.pdf')
 
     if fileList:  # fileListが空でないことを確認
         with open(pdfFileName, "wb") as f:

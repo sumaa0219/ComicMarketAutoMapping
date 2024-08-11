@@ -165,5 +165,5 @@ def tryGrid(areaName):  # 使わない（デバック用）
 
 
 # genAllAreaMapImage()  # 基本これだけ実行でOK
-# genMapGridData("w12")
-# tryGrid("e123")
+# genMapGridData("e7-day1")
+# tryGrid("e7-day1")

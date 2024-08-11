@@ -1,8 +1,8 @@
 {
     "priorityColor": {
         "priority5": "red",
-        "priority4": "orange",
-        "priority3": "magenta",
+        "priority4": "magenta",
+        "priority3": "orange",
         "priority2": "blue",
         "priority1": "green"
     },

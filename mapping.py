@@ -131,7 +131,7 @@ def abPosition(base, place):
             x_end_correction = base_correction
             y_end_correction = 0
         elif base == "下":
-            x_start_correction = base_correction
+            x_start_correction = -base_correction
             y_start_correction = 0
             x_end_correction = base_correction
             y_end_correction = base_correction
@@ -159,9 +159,10 @@ def abPosition(base, place):
     return x_start_correction, y_start_correction, x_end_correction, y_end_correction
 
 
-# image = Image.open("mapimage/out/e7-day2.png")
+# image = Image.open("mapimage/out/e7-day1.png")
 
-# image = mapping(image, "w12", 1, "の42a", 5)
-# image = mapping(image, "e7", 2, "a35a", 5)
+# # # image = mapping(image, "w12", 1, "の42a", 5)
+# image = mapping(image, "e7", 1, "n07b", 5)
+# image = mapping(image, "e7", 1, "n07a", 4)
 
 # image.save("result.png")

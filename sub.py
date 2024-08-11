@@ -41,20 +41,22 @@ print("ユーザー情報の読み込みが完了しました。")
 Info, itemIDperCircle = mapGen.genCircleInfoList(circleInfoJson, itemInfoJson)
 # mapGen.mapGen("e123", Info, 1, "1日目東123ホール.png")
 # mapGen.mapGen("e456", Info, 2, "2日目東456ホール.png")
-# mapGen.mapGen("e7", Info, 2, "2日目東7ホール.png")
+# mapGen.mapGen("e7", Info, 1, "1日目東7ホール.png")
 # mapGen.mapGen("w12", Info, 1, "1日目西ホール.png")
 
-for day in [1, 2]:
-    listGen.circleInfoImageGen(
-        Info, itemInfoJson, itemIDperCircle, day, userInfoJson)
-    print("サークル情報の画像生成が完了しました。")
-    for hallOption in settings["block"]:
-        hall = settings["block"][hallOption]
-        mapGen.mapGen(hall, Info, day, f"out/map_day{day}_{hall}.png")
+# for day in [1, 2]:
+#     listGen.circleInfoImageGen(
+#         Info, itemInfoJson, itemIDperCircle, day, userInfoJson)
+#     print("サークル情報の画像生成が完了しました。")
+#     for hallOption in settings["block"]:
+#         hall = settings["block"][hallOption]
+#         mapGen.mapGen(hall, Info, day, f"out/map_day{day}_{hall}.png")
 
-        # print(Info, itemIDperCircle)
+#         # print(Info, itemIDperCircle)
 
-        pathlist = listGen.buylistImageGen(Info, day, hall)
+#         pathlist = listGen.buylistImageGen(Info, day, hall)
+
+print(settings["block"].keys())
 
 
 if pf == "Darwin":
