@@ -20,19 +20,24 @@ def genAllAreaMapImage():
         logging.error(
             f"ディレクトリ{baseMapAssetsDir}が存在しません。設定を変更するか、マップ画像を配置してください。")
         return
+
     baseMapAssetsDirList = os.listdir(baseMapAssetsDir)
+
     if len(baseMapAssetsDirList) == 0:
         logging.error(
             f"ディレクトリ{baseMapAssetsDir}にエリアのディレクトリが存在しません。設定を変更するか、エリアのディレクトリを配置してください。")
         return
+
     for areaDir in baseMapAssetsDirList:
-        logging.info(f"{areaDir}の画像を生成します")
-        genAreaMapImage(baseMapAssetsDir, areaDir)
-        genMapGridData(areaDir)  # 実際にはファイル名として利用
+        if areaDir != "out":
+
+            logging.info(f"{areaDir}の画像を生成します")
+            mergeImagesWithTransparency(baseMapAssetsDir, areaDir)
+            genMapGridData(areaDir)  # 実際にはファイル名として利用
 
 
-def genAreaMapImage(baseMapAssetsDir, areaDir):
-    areaMapAssetsDir = os.path.join(baseMapAssetsDir, areaDir)
+def genAreaMapImage(baseMapAssetsDir, areaDir, layer):
+    areaMapAssetsDir = os.path.join(baseMapAssetsDir, areaDir, layer)
     areaMapAssetsDirList = os.listdir(areaMapAssetsDir)
     if len(areaMapAssetsDirList) == 0:
         logging.error(
@@ -53,7 +58,8 @@ def genAreaMapImage(baseMapAssetsDir, areaDir):
         instrationMapImageList.append(imagePerSeparatedAreaList)
 
     width, height = getFullImageWidthHigh(instrationMapImageList)
-    new_image = Image.new('RGB', (width, height))
+    print(width, height)
+    new_image = Image.new('RGBA', (width, height))
     positionX = 0
     # 画像を貼り付け
     for x in instrationMapImageList:
@@ -64,12 +70,32 @@ def genAreaMapImage(baseMapAssetsDir, areaDir):
             positionY += image.height-1
         positionX += image.width-1
 
+    # トリミングされた画像を保存
+    return new_image
+
+
+def mergeImagesWithTransparency(baseMapAssetsDir, areaDir):
+    # try:
+    image1 = genAreaMapImage(
+        baseMapAssetsDir, areaDir, "main").convert("RGBA")
+    # image2 = genAreaMapImage(
+    #     baseMapAssetsDir, areaDir, "sub").convert("RGBA")
+
+    # 画像を統合　image2は透過画像として扱いmardegeする
+    merged_image = Image.new(
+        "RGBA", image1.size, (255, 255, 255, 0))
+    merged_image.paste(image1, (0, 0))
+    # merged_image.paste(image2, (0, 0), image2)
+
     # 画像を保存
     outDir = os.path.join(baseMapAssetsDir, "out")
     if not os.path.exists(outDir):
         os.makedirs(outDir)
+
+    outputPath = os.path.join(outDir, f"{areaDir}.png")
+
     # アルファチャンネルを取得
-    alpha = new_image.split()[-1]
+    alpha = merged_image.split()[-1]
     # アルファチャンネルの境界を取得
     bbox = alpha.getbbox()
     # 画像をトリミング
@@ -77,9 +103,13 @@ def genAreaMapImage(baseMapAssetsDir, areaDir):
         print(bbox)
         adjusted_bbox = (bbox[0], bbox[1], bbox[2]+1, bbox[3])
         print(adjusted_bbox)
-        new_image = new_image.crop(adjusted_bbox)
-    # トリミングされた画像を保存
-    new_image.save(os.path.join(outDir, f"{areaDir}.png"))
+        merged_image = merged_image.crop(adjusted_bbox)
+
+    # Save the merged image
+    merged_image.save(outputPath)
+    logging.info(f"画像を統合して保存しました: {outputPath}")
+    # except Exception as e:
+    #     logging.error(f"画像の統合中にエラーが発生しました: {e}")
 
 
 def getFullImageWidthHigh(instrationMapImageList):
@@ -144,11 +174,11 @@ def openGridFile(areaName, day):
     return data
 
 
-def tryGrid(areaName):  # 使わない（デバック用）
-    gridData = openGridFile(areaName)
+def tryGrid(areaName, day):  # 使わない（デバック用）
+    gridData = openGridFile(areaName, day)
     # 画像を読み込む
     image = Image.open(os.path.join(
-        settings["map"]["baseMapAssetsDir"], "out", f"{areaName}.png"))
+        settings["map"]["baseMapAssetsDir"], "out", f"{areaName}-day{day}.png"))
     draw = ImageDraw.Draw(image)
     cellSize = settings["map"]["cellSize"]
 
@@ -165,5 +195,5 @@ def tryGrid(areaName):  # 使わない（デバック用）
 
 
 # genAllAreaMapImage()  # 基本これだけ実行でOK
-# genMapGridData("e7-day1")
-# tryGrid("e7-day1")
+# genMapGridData("e123-day1")
+# tryGrid("e123", "1")

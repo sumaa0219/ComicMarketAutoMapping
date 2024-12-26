@@ -78,9 +78,8 @@ def mapping(image: Image, hall: str, day: int, circlePlace, priority):
     for x in range(int(x), int(x_end)):
         y = (y_save)
         for y in range(int(y), int(y_end)):
-            if pixels[x, y] == (255, 255, 255):  # 白いピクセルを特定
+            if all(240 <= pixels[x, y][i] <= 255 for i in range(3)):  # 白いピクセルを特定
                 pixels[x, y] = ImageColor.getrgb(colorName)  # 指定の色に置換
-
     return image
 
 
