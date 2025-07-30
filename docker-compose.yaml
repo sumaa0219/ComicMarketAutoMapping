@@ -1,0 +1,13 @@
+version: '3'
+services:
+  SASC:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: 'SASC'
+    working_dir: '/SASC'
+    tty: true
+    volumes:
+      - ./:/SASC
+
