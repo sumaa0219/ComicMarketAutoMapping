@@ -20,6 +20,8 @@ RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 RUN pip install -r requirements.txt
 
+# setup.pyを実行して完了まで待機
+COPY . /SACS
 RUN python setup.py
 
 CMD ["python", "main.py"]
