@@ -218,17 +218,30 @@ def genDayBuylistImagePerHall(circleIDList, day, hall):
                 draw.text((positionX+mm_to_pixels(
                     baseSizemm+2), positionY), priorityRank_jp, font=font, fill=text_color)
 
-        new_image.save(os.path.join("out", "buyListImage",
-                       f"buylist_Day{day}_{originHall}_{i}.png"))
-        fileList.append(os.path.join("out", "buyListImage",
-                        f"buylist_Day{day}_{originHall}_{i}.png"))
+        # 圧縮したJPEGファイルとして保存
+        jpeg_path = os.path.join("out", "buyListImage", f"buylist_Day{day}_{originHall}_{i}.jpg")
+        new_image.save(jpeg_path, 'JPEG', quality=75, optimize=True)
+        fileList.append(jpeg_path)
 
     pdfFileName = os.path.join(
         "out", "buylist", f'buylist_day{day}_{originHall}.pdf')
 
     if fileList:  # fileListが空でないことを確認
+        # 最初の画像を読み込んで縦横比を判定
+        first_image = Image.open(fileList[0])
+        img_width, img_height = first_image.size
+        
+        # 画像が横長の場合は横向きA3、縦長の場合は縦向きA3
+        if img_width > img_height:
+            # 横向きA3 (420x297mm)
+            a3inpt = (img2pdf.mm_to_pt(420), img2pdf.mm_to_pt(297))
+        else:
+            # 縦向きA3 (297x420mm)
+            a3inpt = (img2pdf.mm_to_pt(297), img2pdf.mm_to_pt(420))
+            
+        layout_fun = img2pdf.get_layout_fun(a3inpt)
         with open(pdfFileName, "wb") as f:
-            f.write(img2pdf.convert(fileList))
+            f.write(img2pdf.convert(fileList, layout_fun=layout_fun))
     else:
         logging.warning(f"{pdfFileName} は空のためスキップされました。")
 
@@ -242,3 +255,49 @@ def mm_to_pixels(mm_size):
     pixels_size = inches_size * 600
 
     return round(pixels_size)
+
+def png_to_pdf(png_file, pdf_file):
+    image = Image.open(png_file)
+    image = image.convert('RGB')
+    
+    # 元画像の縦横比を判定してA3サイズを決定
+    img_width, img_height = image.size
+    if img_width > img_height:
+        # 横長画像の場合は横向きA3 (72 DPI基準: 1191x842 ポイント)
+        A3_WIDTH = 1191
+        A3_HEIGHT = 842
+    else:
+        # 縦長画像の場合は縦向きA3 (72 DPI基準: 842x1191 ポイント)
+        A3_WIDTH = 842
+        A3_HEIGHT = 1191
+    
+    # A3サイズにリサイズ（アスペクト比を維持しながらフィット）
+    image.thumbnail((A3_WIDTH, A3_HEIGHT), Image.Resampling.LANCZOS)
+    
+    # A3サイズの白い背景を作成
+    a3_image = Image.new('RGB', (A3_WIDTH, A3_HEIGHT), 'white')
+    
+    # 画像を中央に配置
+    x = (A3_WIDTH - image.width) // 2
+    y = (A3_HEIGHT - image.height) // 2
+    a3_image.paste(image, (x, y))
+    
+    # 圧縮した一時的なJPEGファイルとして保存
+    temp_jpeg = pdf_file.replace('.pdf', '_temp.jpg')
+    a3_image.save(temp_jpeg, 'JPEG', quality=75, optimize=True)
+    
+    # 圧縮されたJPEGをPDFに変換
+    if img_width > img_height:
+        # 横向きA3
+        a3inpt = (img2pdf.mm_to_pt(420), img2pdf.mm_to_pt(297))
+    else:
+        # 縦向きA3
+        a3inpt = (img2pdf.mm_to_pt(297), img2pdf.mm_to_pt(420))
+    
+    layout_fun = img2pdf.get_layout_fun(a3inpt)
+    with open(pdf_file, "wb") as f:
+        f.write(img2pdf.convert([temp_jpeg], layout_fun=layout_fun))
+    
+    # 一時ファイルを削除
+    if os.path.exists(temp_jpeg):
+        os.remove(temp_jpeg)

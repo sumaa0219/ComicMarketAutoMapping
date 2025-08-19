@@ -10,6 +10,9 @@ import listGen
 from PIL import Image
 import PyPDF2
 import os
+from setup import MapImageDownloader
+from areaImage import genAllAreaMapImage
+from imgGen import png_to_pdf
 
 
 load_dotenv()
@@ -27,6 +30,15 @@ channelID = None
 
 with open('settings.json', 'r', encoding="utf-8") as json_file:
     settings = json.load(json_file)
+    
+
+# マップ画像ダウンローダーの初期化
+downloader = MapImageDownloader()
+# 全エリア・全日の自動ダウンロード
+downloader.download_all_areas()
+
+genAllAreaMapImage()
+
 
 
 @client.event
@@ -44,15 +56,15 @@ async def generate(interaction: discord.Interaction, day: int):
     # cookie = settings["url"]["cookie"]
 
     circleInfoJson = requests.get(
-        "https://com-fork-c104.vercel.app/api/db/circle", allow_redirects=False).json()
+        str(settings["url"]["webapp"]["domainOrigin"] + settings["url"]["webapp"]["circleList"]), allow_redirects=False).json()
     print("サークル情報の読み込みが完了しました。")
 
     itemInfoJson = requests.get(
-        "https://com-fork-c104.vercel.app/api/db/item", allow_redirects=False).json()
+        str(settings["url"]["webapp"]["domainOrigin"] + settings["url"]["webapp"]["itemList"]), allow_redirects=False).json()
     print("購入物情報の読み込みが完了しました。")
 
     userInfoJson = requests.get(
-        "https://com-fork-c104.vercel.app/api/db/user", allow_redirects=False).json()
+        str(settings["url"]["webapp"]["domainOrigin"] + settings["url"]["webapp"]["user"]), allow_redirects=False).json()
     print("ユーザー情報の読み込みが完了しました。")
 
     Info, itemIDperCircle = mapGen.genCircleInfoList(
@@ -110,12 +122,6 @@ async def send_console(message):
     guild = client.get_guild(int(logServer))
     channel = guild.get_channel(int(logChannel))
     await channel.send(message)
-
-
-def png_to_pdf(png_file, pdf_file):
-    image = Image.open(png_file)
-    image = image.convert('RGB')
-    image.save(pdf_file)
 
 
 def merge_pdfs(pdf_list, output_pdf):

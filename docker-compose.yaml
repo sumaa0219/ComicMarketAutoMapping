@@ -1,5 +1,5 @@
 services:
-  SASC:
+  sasc:
     restart: always
     build:
       context: .

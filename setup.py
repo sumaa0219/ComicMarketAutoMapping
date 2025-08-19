@@ -228,21 +228,5 @@ class MapImageDownloader:
         return total_downloaded
 
 
-def main():
-    """使用例"""
-    downloader = MapImageDownloader()
-    
-    # 単一画像のダウンロード例
-    # downloader.download_image("Day1-e7", 0, 0, "main")
-    
-    # 特定エリアの自動ダウンロード例
-    # downloader.download_area_images_auto("Day1-e7", "main")
-    
-    # 全エリア・全日の自動ダウンロード
-    downloader.download_all_areas()
-    
-    areaImage.genAllAreaMapImage()
 
-
-if __name__ == "__main__":
-    main()
+    

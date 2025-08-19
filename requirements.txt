@@ -21,6 +21,7 @@ plyer
 pydantic
 pydantic_core
 python-dotenv
+PyPDF2
 requests
 typing_extensions
 urllib3

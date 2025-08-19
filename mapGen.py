@@ -89,7 +89,7 @@ def genCircleInfoList(circleInfos, itemInfos):
         if circleInfos[circleInfo]["deleted"] == False:
             itemcircleList = {}
             i = 0
-            for item in itemInfos:
+            for item in itemInfos.keys():
                 if circleInfos[circleInfo]["id"] == itemInfos[item]["circleId"]:
                     itemcircleList.update({str(i): itemInfos[item]["id"]})
                     i += 1
